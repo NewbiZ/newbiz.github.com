@@ -2,4 +2,4 @@
 layout: page_index
 title: My coder basement
 ---
-Index
+This is the index

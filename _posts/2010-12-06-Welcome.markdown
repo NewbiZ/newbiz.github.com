@@ -1,6 +1,6 @@
 ---
 layout: page_post
-title: Welcome!
+title: Welcome
 ---
 Subtitle 1
 ----------
