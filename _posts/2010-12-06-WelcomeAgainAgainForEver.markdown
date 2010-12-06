@@ -82,9 +82,6 @@ sollicitudin est eu imperdiet. Nam malesuada scelerisque diam eget rutrum. Curab
 euismod augue malesuada auctor. Vivamus sit amet urna vitae enim ullamcorper aliquet. Mauris
 fringilla porta dolor, eget consequat sapien aliquam quis.
 
-This is a title
-===============
-
 Subtitle 1
 ----------
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet vehicula magna,
