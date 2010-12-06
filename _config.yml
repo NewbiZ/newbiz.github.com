@@ -1,7 +1,7 @@
-markdown: rdiscount
-pygments: true
-paginate: 5
+markdown:    rdiscount
+pygments:    true
+paginate:    5
 
 author:
-  name: "Aurélien Vallée"
+  name: "Aurelien Vallee"
   mail: "vallee.aurelien@gmail.com"
