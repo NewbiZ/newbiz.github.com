@@ -1,0 +1,196 @@
+/********************************************************************************
+ GENERAL SETTINGS
+ ********************************************************************************/
+*
+{
+  text-align:  justify;
+  font-family: Verdana;
+}
+
+body
+{
+  background-color: #F0F0F0;
+}
+
+/********************************************************************************
+ BREADCRUMBS
+ ********************************************************************************/
+#breadcrumbs
+{
+  margin:        0;
+  padding:       0;
+  font-size:     12px;
+  margin-left:   20px;
+  margin-top:    20px;
+  margin-bottom: -6px;
+  opacity:       0.5;
+}
+
+/********************************************************************************
+ LINKS
+ ********************************************************************************/
+a
+{
+  color: #2A5685;
+  text-decoration: none;
+}
+
+a:visited
+{
+  color: #2A5685;
+}
+
+a:hover
+{
+  color: #5D89B8;
+}
+
+#header a
+{
+  color: white;
+  text-decoration: none;
+}
+
+#header a:visited
+{
+  color: white;
+}
+
+#header a:hover
+{
+  color: white;
+}
+
+/********************************************************************************
+ HEADER
+ ********************************************************************************/
+#header
+{
+  background:    -webkit-gradient(linear, left top, left bottom, from(#444444), to(#333333));
+  height:        50px;
+  border-radius: 10px;
+  text-shadow:   1px 1px 1px rgba(0, 0, 0, 0.5);
+  font-size:     16px
+}
+
+#header #header_menu
+{
+  margin:          0;
+  padding:         0;
+  list-style-type: none;
+  text-align:      center;
+  padding-top:     15px;
+}
+
+#header #header_menu li
+{
+  display: inline;
+  color:   #FFFFFF;
+}
+
+#header #header_menu li a
+{
+  padding: .2em 1em;
+}
+
+/********************************************************************************
+ FOOTER
+ ********************************************************************************/
+#footer
+{
+  font-weight: bold;
+  font-size:   12px;
+  color:       #999999;
+  padding:     10px;
+  float:       right;
+}
+
+#footer a
+{
+  margin-right: 20px;
+  opacity:      0.5;
+}
+
+#footer a:hover
+{
+  margin-right: 20px;
+  opacity:      1;
+}
+
+/********************************************************************************
+ ATTACHMENTS
+ ********************************************************************************/
+#attachments
+{
+  text-align:       center;
+  display:          block;
+  margin:           auto;
+  border-radius:    10px;
+  padding:          10px;
+  font-size:        12px;
+  border:           1px solid #CCCCCC;
+  background-color: #F0F0F0;
+  width:            300px;
+}
+
+/********************************************************************************
+ CONTENT
+ ********************************************************************************/
+#content
+{
+  margin-top:       10px;
+  color:            #333333;
+  padding:          20px;
+  border:           1px solid #CCCCCC;
+  background-color: #FFFFFF;
+  border-radius:    10px;                
+}
+
+#content p
+{
+  font-size:   12px;
+  line-height: 1.8;
+}
+
+#content h1
+{
+  font-size:      18px;
+  padding-bottom: 5px;
+  border-bottom:  1px dotted #CCCCCC;
+}
+
+#content h2
+{
+  font-size:      14px;
+  font-weight:    bold;
+  padding-bottom: 5px;
+}
+
+/********************************************************************************
+ CODE
+ ********************************************************************************/
+#content code
+{
+}
+
+#content pre
+{
+  border-radius:    10px;                
+  padding:          10px;
+  font-family:      Courier New;
+  font-size:        14px;
+  margin:           0;
+  border:           1px solid #CCCCCC;
+  background-color: #F0F0F0;
+}
+
+#content pre span
+{
+  font-family: Courier New;
+}
+
+#content pre span.line-numbers
+{
+  background-color: #F0F0F0;
+  color:            #CCCCCC;
+}
