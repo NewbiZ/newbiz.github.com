@@ -2,4 +2,6 @@
 layout: page_index
 title: My coder basement
 ---
-This is the index
+{% for post in paginator.posts %}
+	{% include page_post.html %}
+{% endfor %}
