@@ -22,8 +22,8 @@
     </div>
     <div id="breadcrumbs">
       Home
-      {% if    page.url.eql?("/about.html") "&gt; About"                   %}
-      {% elsif page.url.eql?("/posts.html") "&gt; Posts"                   %}
+      {% if    page.url.eql?("/about") "&gt; About"                   %}
+      {% elsif page.url.eql?("/posts") "&gt; Posts"                   %}
       {% else "&gt; Posts &gt; "+post.categories.join(' &gt; ')+post.title %}
       {% endif %}
     </div>
