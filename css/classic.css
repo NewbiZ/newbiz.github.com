@@ -67,8 +67,10 @@ a:hover
 
 #content .post_date
 {
-  font-size:   12px;
-  margin-top: -20px;
+  font-size:  12px;
+  margin-top: -15px;
+  color:      #999999;
+  float:      right;
 }
 
 /********************************************************************************
