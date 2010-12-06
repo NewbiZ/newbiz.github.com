@@ -1,10 +1,6 @@
 <div class="post_title">
 <h1>
-{% if detail %}
-{{ post.title }}
-{% else %}
 <a href="{{ post.url }}">{{ post.title }}</a>
-{% endif %}
 </h1>
 
 <div class="post_date">
@@ -12,10 +8,6 @@ Posted by {{ site.author.name }} on {{ post.date | date:'%A, %B %d, %Y' | replac
 </div>
 
 <div class="post_content">
-{% if detail %}
-{{ content }}
-{% else %}
 {{ post.content }}
-{% endif %}
 </div>
 </div>
