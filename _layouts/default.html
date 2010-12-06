@@ -22,9 +22,9 @@
     </div>
     <div id="breadcrumbs">
       Home
-      {% if    page.url.eql?("/about") "&gt; About"                   %}
-      {% elsif page.url.eql?("/posts") "&gt; Posts"                   %}
-      {% else "&gt; Posts &gt; "+post.categories.join(' &gt; ')+post.title %}
+      {% if    page.url.eql?("/about") puts "&gt; About"                        %}
+      {% elsif page.url.eql?("/posts") puts "&gt; Posts"                        %}
+      {% else puts "&gt; Posts &gt; "+post.categories.join(' &gt; ')+post.title %}
       {% endif %}
     </div>
     <div id="content">
