@@ -14,20 +14,20 @@
     <div id="header">
       <ul id="header_menu">
         <li class="header_menu_link" id="header_menu_link_home"    ><a href="/">Home</a></li>
-        <li class="header_menu_link" id="header_menu_link_articles"><a href="/posts">Posts</a></li>
+        <li class="header_menu_link" id="header_menu_link_articles"><a href="/posts.html">Posts</a></li>
         <li class="header_menu_link" id="header_menu_link_projects"><a href="https://github.com/NewbiZ/repositories">Projects</a></li>
         <li class="header_menu_link" id="header_menu_link_snippets"><a href="https://gist.github.com/NewbiZ">Snippets</a></li>
-        <li class="header_menu_link" id="header_menu_link_about"   ><a href="/about">About</a></li>
+        <li class="header_menu_link" id="header_menu_link_about"   ><a href="/about.html">About</a></li>
       </ul>
     </div>
     <div id="breadcrumbs">
       Home
-      {% if page.url.eql?("/about") %}
-        {{"&gt; About"}}
-      {% elsif page.url.eql?("/posts") %}
-        {{"&gt; Posts"}}
+      {% if page.url.eql? "/about.html" %}
+        {{ "&gt; About" }}
+      {% elsif page.url.eql? "/posts.html" %}
+        {{ "&gt; Posts" }}
       {% else %}
-        {{"&gt; Posts &gt; "+post.categories.join(' &gt; ')+post.title}}
+        {{ "&gt; Posts &gt; " + post.categories.join(" &gt; ") + " &gt; " + post.title }}
       {% endif %}
     </div>
     <div id="content">
