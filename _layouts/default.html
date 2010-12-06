@@ -20,22 +20,7 @@
         <li class="header_menu_link" id="header_menu_link_about"   ><a href="/about.html">About</a></li>
       </ul>
     </div>
-    <div id="breadcrumbs">
-      Home
-      {% if page.url.eql? "/about.html" %}
-        {{ "&gt; About" }}
-      {% elsif page.url.eql? "/posts.html" %}
-        {{ "&gt; Posts" }}
-      {% else %}
-        {{ "&gt; Posts &gt; " + post.categories.join(" &gt; ") + " &gt; " + post.title }}
-      {% endif %}
-    </div>
-    <div id="content">
-      page.url: {{page.url}}<br />
-      post.title: {{post.title}}<br />
-      post categories: {{post.categories.join(",")}}<br />
-      {{ content }}
-    </div>
+    {{ content }}
     <div id="footer">
       <a href="http://creativecommons.org/licenses/by-sa/2.0/fr/deed.en" target="_blank">
         <img alt="Creative Commons Licence" src="/images/creative_commons.png" />

@@ -1,9 +1,10 @@
 ---
-layout: default
+layout: page_posts
 title: My coder basement
+permalink:  /posts/
 ---
 Recents posts
 =============
 {% for post in site.posts %}
-  {{ post.date | date_to_string }} - [{{ post.title }}]({{ post.url }})
+  [{{ post.title }}]({{ post.url }}) [ {{ post.date | date_to_string }} ]
 {% endfor %}

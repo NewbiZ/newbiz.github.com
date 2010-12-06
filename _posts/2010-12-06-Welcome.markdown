@@ -1,10 +1,7 @@
 ---
-layout: default
+layout: page_post
 title: Welcome!
 ---
-This is a title
-================
-
 Subtitle 1
 ----------
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet vehicula magna,
