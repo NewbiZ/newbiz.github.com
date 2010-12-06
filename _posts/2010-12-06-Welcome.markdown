@@ -1,6 +1,7 @@
 ---
 layout: page_post
 title: Welcome
+category: Personal
 ---
 Subtitle 1
 ----------
