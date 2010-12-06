@@ -8,10 +8,7 @@ Posted by {{ site.author.name }} on {{ post.date | date:'%A, %B %d, %Y' | replac
 </div>
 
 <div class="post_content">
-{{ post.content | truncatewords:300 }}
-</div>
-
-<div class="post_more">
-  <a href="{{ post.url }}">&raquo; Read more&#8230;</a>
+{{ post.content | truncatewords:500 }}
+<p class="post_more"><a href="{{ post.url }}">&raquo; Read more&#8230;</a></p>
 </div>
 </div>
