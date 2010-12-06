@@ -22,9 +22,9 @@
     </div>
     <div id="breadcrumbs">
       Home
-      {{ if    page.url==="/about.html" then "> About"             }}
-      {{ elsif page.url==="/posts.html" then "> Posts"             }}
-      {{ else "> Posts > "+post.categories.join(' > ')+post.title }}
+      {{ if    page.url.eql?("/about.html") then "&gt; About" }}
+      {{ elsif page.url.eql?("/posts.html") then "&gt; Posts" }}
+      {{ else "&gt; Posts &gt; "+post.categories.join(' &gt; ')+post.title }}
     </div>
     <div id="content">
       {{ content }}
