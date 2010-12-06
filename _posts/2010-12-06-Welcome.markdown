@@ -28,6 +28,23 @@ Morbi ultrices diam vel purus tincidunt euismod. Pellentesque bibendum sollicitu
 id massa massa. Nullam lobortis nunc in tellus bibendum elementum scelerisque turpis tristique.
 Nunc ac vestibulum dui.
 
+{% highlight ruby %}
+# Public: Duplicate some text an abitrary number of times.
+#
+# text  - The String to be duplicated.
+# count - The Integer number of times to duplicate the text.
+#
+# Examples
+#
+#   multiplex('Tom', 4)
+#   # => 'TomTomTomTom'
+#
+# Returns the duplicated String.
+def multiplex(text, count)
+  text * count
+end
+{% endhighlight %}
+
 Subtitle 2
 ----------
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet vehicula magna,
