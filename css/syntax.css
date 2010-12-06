@@ -1,0 +1,61 @@
+.codehilite .hll { background-color: #FFFFCC;                             }
+.codehilite .c   { color: #0099FF; font-style: italic;                    }
+.codehilite .err { color: #AA0000; background-color: #FFAAAA;             }
+.codehilite .k   { color: #006699; font-weight: bold;                     }
+.codehilite .o   { color: #555555;                                        }
+.codehilite .cm  { color: #0099FF; font-style: italic;                    }
+.codehilite .cp  { color: #009999;                                        }
+.codehilite .c1  { color: #0099FF; font-style: italic;                    }
+.codehilite .cs  { color: #0099FF; font-weight: bold; font-style: italic; }
+.codehilite .gd  { background-color: #FFCCCC; border: 1px solid #CC0000;  }
+.codehilite .ge  { font-style: italic;                                    }
+.codehilite .gr  { color: #FF0000;                                        }
+.codehilite .gh  { color: #003300; font-weight: bold;                     }
+.codehilite .gi  { background-color: #CCFFCC; border: 1px solid #00CC00;  }
+.codehilite .go  { color: #AAAAAA;                                        }
+.codehilite .gp  { color: #000099; font-weight: bold;                     }
+.codehilite .gs  { font-weight: bold;                                     }
+.codehilite .gu  { color: #003300; font-weight: bold;                     }
+.codehilite .gt  { color: #99CC66;                                        }
+.codehilite .kc  { color: #006699; font-weight: bold;                     }
+.codehilite .kd  { color: #006699; font-weight: bold;                     }
+.codehilite .kn  { color: #006699; font-weight: bold;                     }
+.codehilite .kp  { color: #006699;                                        }
+.codehilite .kr  { color: #006699; font-weight: bold;                     }
+.codehilite .kt  { color: #007788; font-weight: bold;                     }
+.codehilite .m   { color: #FF6600;                                        }
+.codehilite .s   { color: #CC3300;                                        }
+.codehilite .na  { color: #330099;                                        }
+.codehilite .nb  { color: #336666;                                        }
+.codehilite .nc  { color: #00AA88; font-weight: bold;                     }
+.codehilite .no  { color: #336600;                                        }
+.codehilite .nd  { color: #9999FF;                                        }
+.codehilite .ni  { color: #999999; font-weight: bold;                     }
+.codehilite .ne  { color: #CC0000; font-weight: bold;                     }
+.codehilite .nf  { color: #CC00FF;                                        }
+.codehilite .nl  { color: #9999FF;                                        }
+.codehilite .nn  { color: #00CCFF; font-weight: bold;                     }
+.codehilite .nt  { color: #330099; font-weight: bold;                     }
+.codehilite .nv  { color: #003333;                                        }
+.codehilite .ow  { color: #000000; font-weight: bold;                     }
+.codehilite .w   { color: #bbbbbb;                                        }
+.codehilite .mf  { color: #FF6600;                                        }
+.codehilite .mh  { color: #FF6600;                                        }
+.codehilite .mi  { color: #FF6600;                                        }
+.codehilite .mo  { color: #FF6600;                                        }
+.codehilite .sb  { color: #CC3300;                                        }
+.codehilite .sc  { color: #CC3300;                                        }
+.codehilite .sd  { color: #CC3300; font-style: italic;                    }
+.codehilite .s2  { color: #CC3300;                                        }
+.codehilite .se  { color: #CC3300; font-weight: bold;                     }
+.codehilite .sh  { color: #CC3300;                                        }
+.codehilite .si  { color: #AA0000;                                        }
+.codehilite .sx  { color: #CC3300;                                        }
+.codehilite .sr  { color: #33AAAA;                                        }
+.codehilite .s1  { color: #CC3300;                                        }
+.codehilite .ss  { color: #FFCC33;                                        }
+.codehilite .bp  { color: #336666;                                        }
+.codehilite .vc  { color: #003333;                                        }
+.codehilite .vg  { color: #003333;                                        }
+.codehilite .vi  { color: #003333;                                        }
+.codehilite .il  { color: #FF6600;                                        }
