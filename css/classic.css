@@ -65,6 +65,11 @@ a:hover
  PARTIAL POST
  ********************************************************************************/
 
+#content .post_title
+{
+  margin-top: 10px;
+}
+
 #content .post_date
 {
   font-size:  12px;
