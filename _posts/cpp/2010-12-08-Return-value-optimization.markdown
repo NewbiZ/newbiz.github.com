@@ -23,8 +23,8 @@ struct Foo
 
 Foo function()
 {
-  Foo f_function; // (1)
-  return f_function; // (2)
+  Foo f_function;          // (1)
+  return f_function;       // (2)
 }
 
 int main( int, char** )

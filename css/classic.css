@@ -191,6 +191,17 @@ a:hover
   line-height: 20px;
 }
 
+#content blockquote
+{
+  color:            #999999;
+  padding-left:     70px;
+  padding-right:    20px;
+  padding-top:      5px;
+  padding-bottom:   5px;
+  font-style:       italic;
+  background:       url(/Users/newbiz/Projects/NewbiZ/images/blockquote_left.png) no-repeat left center;
+}
+
 /********************************************************************************
  ABOUT
  ********************************************************************************/
