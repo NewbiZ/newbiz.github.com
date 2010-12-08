@@ -158,6 +158,11 @@ a:hover
   border-radius:    10px;                
 }
 
+#content code
+{
+  font-family: "Courier";
+}
+
 #content p
 {
   font-size:   12px;
