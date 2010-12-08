@@ -1,6 +1,5 @@
 markdown:    rdiscount
 pygments:    true
-paginate:    5
 
 author:
   name: "Aurelien Vallee"

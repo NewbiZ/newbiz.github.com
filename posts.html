@@ -6,13 +6,16 @@ permalink:  /posts/
 <h1>Recent posts</h1>
 
 <div class="smallpost" id="smallpost_opengl">
-<h2><img src="/images/opengl.png" />OpenGL ({{ site.categories.opengl | size }})</h2>
+<h2><img src="/images/opengl.png" />OpenGL</h2>
 {% for post in site.categories.opengl limit: 5 %}
   <p>
     <a href="{{ post.url }}">&raquo; {{ post.title }}</a>
     <span style="color: #AAAAAA; font-size:80%">{{ post.date | date_to_string }}</span>
   </p>
 {% endfor %}
+  <p>
+    <a href="/opengl">See all {{ site.categories.opengl | size }} articles &raquo;</a>
+  </p>
 </div>
 
 <div class="smallpost" id="smallpost_cpp">
@@ -23,6 +26,9 @@ permalink:  /posts/
     <span style="color: #AAAAAA; font-size:80%">{{ post.date | date_to_string }}</span>
   </p>
 {% endfor %}
+  <p>
+    <a href="/cpp">See all {{ site.categories.cpp | size }} articles &raquo;</a>
+  </p>
 </div>
 
 <div class="smallpost" id="smallpost_tutorials">
@@ -33,6 +39,9 @@ permalink:  /posts/
     <span style="color: #AAAAAA; font-size:80%">{{ post.date | date_to_string }}</span>
   </p>
 {% endfor %}
+  <p>
+    <a href="/tutorials">See all {{ site.categories.tutorials | size }} articles &raquo;</a>
+  </p>
 </div>
 
 <div class="smallpost" id="smallpost_news">
@@ -43,6 +52,9 @@ permalink:  /posts/
     <span style="color: #AAAAAA; font-size:80%">{{ post.date | date_to_string }}</span>
   </p>
 {% endfor %}
+  <p>
+    <a href="/news">See all {{ site.categories.news | size }} articles &raquo;</a>
+  </p>
 </div>
 
 <div style="clear: both"></div>
