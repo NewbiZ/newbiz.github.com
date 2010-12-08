@@ -18,7 +18,7 @@ These changes are reflected in other terminal applications such as vim.
 Okay, so the first thing to locate, is your `.bash_profile` file in your home directory. If the file does not exists, just create it.
 
 This file contains command lines that are executed when launching a new Console window. So you can just start by typing them directly
-in the terminal to test it before adding it to you `.bash_profile`
+in the terminal to test it before adding it to your `.bash_profile`
 
 Bash configuration
 -------------------
