@@ -160,7 +160,11 @@ a:hover
 
 #content code
 {
-  font-family: "Courier";
+  font-family:      "Courier";
+  border:           1px solid #CCCCCC;
+  border-radius:    6px;
+  color:            #333333;
+  background-color: #F0F0F0;
 }
 
 #content p
