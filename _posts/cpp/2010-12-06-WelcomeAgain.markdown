@@ -1,6 +1,7 @@
 ---
 layout: page_post
-title: Welcome again, again, and for ever
+title: Welcome again
+categories: cpp
 ---
 Subtitle 1
 ----------

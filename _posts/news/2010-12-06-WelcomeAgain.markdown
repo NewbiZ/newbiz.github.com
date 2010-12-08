@@ -1,6 +1,7 @@
 ---
 layout: page_post
 title: Welcome again
+categories: news
 ---
 Subtitle 1
 ----------

@@ -1,6 +1,7 @@
 ---
 layout: page_post
 title: Welcome again and again
+categories: opengl
 ---
 Subtitle 1
 ----------

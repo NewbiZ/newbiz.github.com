@@ -1,6 +1,7 @@
 ---
 layout: page_post
 title: Welcome
+categories: tutorials
 ---
 Subtitle 1
 ----------
