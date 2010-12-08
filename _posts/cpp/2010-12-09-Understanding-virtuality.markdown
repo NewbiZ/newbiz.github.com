@@ -1,6 +1,6 @@
 ---
 layout: page_post
-title: Return value optimization
+title: Understanding virtuality
 categories: cpp
 ---
 The simple case
