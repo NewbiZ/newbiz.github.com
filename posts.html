@@ -1,0 +1,48 @@
+---
+layout: page_posts
+title: My coder basement
+permalink:  /posts/
+---
+<h1>Recent posts</h1>
+
+<div class="smallpost" id="smallpost_opengl">
+<h2><img src="/images/opengl.png" />OpenGL</h2>
+{% for post in site.posts limit: 5 %}
+  <p>
+    <a href="{{ post.url }}">&raquo; {{ post.title }}</a>
+    <span style="color: #AAAAAA; font-size:80%">{{ post.date | date_to_string }}</span>
+  </p>
+{% endfor %}
+</div>
+
+<div class="smallpost" id="smallpost_cpp">
+<h2><img src="/images/cpp.png" />C++</h2>
+{% for post in site.posts limit: 5 %}
+  <p>
+    <a href="{{ post.url }}">&raquo; {{ post.title }}</a>
+    <span style="color: #AAAAAA; font-size:80%">{{ post.date | date_to_string }}</span>
+  </p>
+{% endfor %}
+</div>
+
+<div class="smallpost" id="smallpost_tutorials">
+<h2><img src="/images/tutorials.png" />Tutorials</h2>
+{% for post in site.posts limit: 5 %}
+  <p>
+    <a href="{{ post.url }}">&raquo; {{ post.title }}</a>
+    <span style="color: #AAAAAA; font-size:80%">{{ post.date | date_to_string }}</span>
+  </p>
+{% endfor %}
+</div>
+
+<div class="smallpost" id="smallpost_news">
+<h2><img src="/images/news.png" />News</h2>
+{% for post in site.posts limit: 5 %}
+  <p>
+    <a href="{{ post.url }}">&raquo; {{ post.title }}</a>
+    <span style="color: #AAAAAA; font-size:80%">{{ post.date | date_to_string }}</span>
+  </p>
+{% endfor %}
+</div>
+
+<div style="clear: both"></div>

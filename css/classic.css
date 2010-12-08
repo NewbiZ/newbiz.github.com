@@ -193,6 +193,43 @@ a:hover
 }
 
 /********************************************************************************
+ POSTS
+ ********************************************************************************/
+#content .smallpost img
+{
+  vertical-align: middle;
+  margin-right:   10px;
+}
+
+#content #smallpost_opengl
+{
+  display: block;
+  width:   49%;
+  float:   left;
+}
+
+#content #smallpost_cpp
+{
+  display: block;
+  width:   49%;
+  float:   right;
+}
+
+#content #smallpost_tutorials
+{
+  display: block;
+  width:   49%;
+  float:   left;
+}
+
+#content #smallpost_news
+{
+  display: block;
+  width:   49%;
+  float:   right;
+}
+
+/********************************************************************************
  CODE
  ********************************************************************************/
 #content code
