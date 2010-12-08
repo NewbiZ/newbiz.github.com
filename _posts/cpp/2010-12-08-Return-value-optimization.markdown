@@ -66,7 +66,7 @@ The C++ standard clearly states that any optimization performed by a compiler sh
 > For instance, an actual implementation need not evaluate part of an expression if it can deduce that its value is not used and that no side effects affecting the observable behavior of the program are produced.
 
 Let's look at the g++ assembly output using `g++ -c test.o && otool -tV test.o` (`otool` is the OSX equivalent of `objdump`):
-{% highlight objdump %}
+{% highlight gas %}
 function()
 {
   pushl %ebp            ; 
@@ -107,7 +107,7 @@ Some explanations
 It is now time to give some explanations on what happened here. It is one of the only exceptions to the _as if_ rule know as the _return value optimization_, or _RVO_.
 It allows the compiler, in case a function returns by constructor, to reserve the instance on the stack of the caller, and pass the address to the callee.
 This is somewhat similar to the following code:
-{% highlight c++ %}
+{% highlight cpp %}
 struct Foo
 {
   Foo()
