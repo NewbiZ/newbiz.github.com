@@ -69,33 +69,33 @@ Let's look at the g++ assembly output using `g++ -c test.o && otool -tV test.o` 
 {% highlight gas %}
 function()
 {
-  pushl %ebp            ; 
-  movl  %esp,%ebp       ; 
-  pushl %esi            ; 
-  subl  $0x24,%esp      ; 
-  movl  0x08(%ebp),%esi ; Address of instance on the stack
-  movl  %esi,%eax       ; is loaded in eax and pushed on
-  movl  %eax,(%esp)     ; the stack again (g++ thiscall convention)
-  calll 0x00000230      ; Symbol stub for Foo()
-  movl  %esi,%eax       ; 
-  addl  $0x24,%esp      ; 
-  popl  %esi            ; 
-  leave                 ; 
-  ret $0x0004           ; 
+  pushl %ebp            # 
+  movl  %esp,%ebp       # 
+  pushl %esi            # 
+  subl  $0x24,%esp      # 
+  movl  0x08(%ebp),%esi # Address of instance on the stack
+  movl  %esi,%eax       # is loaded in eax and pushed on
+  movl  %eax,(%esp)     # the stack again (g++ thiscall convention)
+  calll 0x00000230      # Symbol stub for Foo()
+  movl  %esi,%eax       # 
+  addl  $0x24,%esp      # 
+  popl  %esi            # 
+  leave                 # 
+  ret $0x0004           # 
 }
 
 main()
 {
-  pushl %ebp             ; 
-  movl  %esp,%ebp        ; 
-  subl  $0x28,%esp       ; 
-  leal  0xf7(%ebp),%eax  ; Load address of the Foo 
-  movl  %eax,(%esp)      ; instance on the stack
-  calll function         ; Call function()
-  subl  $0x04,%esp       ; 
-  movl  $function,%eax   ; 
-  leave                  ; 
-  ret                    ; 
+  pushl %ebp             # 
+  movl  %esp,%ebp        # 
+  subl  $0x28,%esp       # 
+  leal  0xf7(%ebp),%eax  # Load address of the Foo 
+  movl  %eax,(%esp)      # instance on the stack
+  calll function         # Call function()
+  subl  $0x04,%esp       # 
+  movl  $function,%eax   # 
+  leave                  # 
+  ret                    # 
 }
 {% endhighlight %}
 
