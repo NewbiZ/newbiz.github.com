@@ -201,6 +201,11 @@ a:hover
   margin-right:   10px;
 }
 
+#content .smallpost li
+{
+  font-size: 12px;
+}
+
 #content #smallpost_opengl
 {
   display: block;
