@@ -7,9 +7,12 @@ This article will help you customize the Console application to have cute colors
 It is a sequel to the very nice article provided by Todd Werth [on his blog](http://blog.infinitered.com/entries/show/6).
 
 Let’s begin this article by directly showing you the expected result:
+
 ![Result console 1](/files/cute_console1.png "Result console 1")
+
 As you noticed, we change the color and informations displayed at the prompt, as well as the main colors of the console.
 These changes are reflected in other terminal applications such as vim.
+
 ![Result console 2](/files/cute_console2.png "Result console 2")
 
 Okay, so the first thing to locate, is your `.bash_profile` file in your home directory. If the file does not exists, just create it.
@@ -32,7 +35,9 @@ Now it’s time to set up a clean prompt. The only informations we need is the c
 {% highlight bash %}
     export PS1="\e[40;32m\u \e[40;34m\w \e[40;37m➤ \e[0m \[${COLOR_NC}\]"
 {% endhighlight %}
+
 There are a number of options for configuring a nice prompt. Here are some escaped sequences and their equivalents:
+
 * `\a` : an ASCII bell character (07)
 * `\d` : the date in “Weekday Month Date” format (e.g., “Tue May 26”)
 * `\D{format}` : the format is passed to strftime(3) and the result is inserted into the prompt
