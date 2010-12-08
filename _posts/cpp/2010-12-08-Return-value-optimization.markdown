@@ -144,9 +144,9 @@ Sometimes we really don't want g++ to perform such optimizations, hopefully, we 
 
 Building the first example of this article with `g++ test.cpp -fno-elide-constructors -o test && ./test` now returns the expected output:
 
-    Foo() @0xbffff79f
-    Foo( const Foo& ) @0xbffff7cf
-    Foo( const Foo& ) @0xbffff7ce
+    Foo() @0x11111111
+    Foo( const Foo& ) @0x22222222
+    Foo( const Foo& ) @0x33333333
 
 Things to remember
 ------------------
