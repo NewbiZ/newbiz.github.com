@@ -66,7 +66,7 @@ The C++ standard clearly states that any optimization performed by a compiler sh
 > For instance, an actual implementation need not evaluate part of an expression if it can deduce that its value is not used and that no side effects affecting the observable behavior of the program are produced.
 
 Let's look at the g++ assembly output using `g++ -c test.o && otool -tV test.o` (`otool` is the OSX equivalent of `objdump`):
-{% highlight cpp-objdump %}
+{% highlight objdump %}
 function()
 {
   pushl %ebp            ; 
