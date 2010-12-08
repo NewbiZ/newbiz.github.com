@@ -67,8 +67,8 @@ The C++ standard clearly states that any optimization performed by a compiler sh
 
 Let's look at the g++ assembly output using `g++ -c test.o && otool -tV test.o` (`otool` is the OSX equivalent of `objdump`):
 {% highlight gas %}
-function()
-{
+#function:
+#{
   pushl %ebp            # 
   movl  %esp,%ebp       # 
   pushl %esi            # 
@@ -82,10 +82,10 @@ function()
   popl  %esi            # 
   leave                 # 
   ret $0x0004           # 
-}
+#}
 
-main()
-{
+#main:
+#{
   pushl %ebp             # 
   movl  %esp,%ebp        # 
   subl  $0x28,%esp       # 
@@ -96,7 +96,7 @@ main()
   movl  $function,%eax   # 
   leave                  # 
   ret                    # 
-}
+#}
 {% endhighlight %}
 
 I cleaned and commented the output for more clarity. The result is quite obvious: no object copying is involved, everything is done on the exact same `Foo` instance.
