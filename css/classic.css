@@ -201,6 +201,13 @@ a:hover
   margin-right:   10px;
 }
 
+/* Category post listing list */
+#content ul
+{
+  line-height: 20px;
+}
+
+/* Post small listing */
 #content .smallpost ul
 {
   margin:      0;
