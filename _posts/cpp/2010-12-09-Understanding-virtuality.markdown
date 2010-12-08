@@ -46,6 +46,23 @@ int main( int, char** )
   return EXIT_SUCCESS;
 }
 {% endhighlight %}
+Output:
+    sizeof(Foo)= 12
+    
+    (int*)&foo+0=    0xbffff7c4
+    &foo.a=          0xbffff7c4
+    foo.a=           1
+    *((int*)&foo+0)= 1
+    
+    &foo.b=          0xbffff7c8
+    (int*)&foo+1=    0xbffff7c8
+    foo.b=           2
+    *((int*)&foo+1)= 2
+    
+    &foo.c=          0xbffff7cc
+    (int*)&foo+2=    0xbffff7cc
+    foo.c=           3
+    *((int*)&foo+2)= 3
 
 Introducing virtuality
 ----------------------
@@ -96,6 +113,29 @@ int main( int, char** )
 }
 {% endhighlight %}
 
+Output:
+    sizeof(Foo)= 16
+    
+    (int (***)(...))&foo+0=    0xbffff7c0
+    &foo._vptr=                0xbffff7c0
+    foo._vptr=                 0x2040
+    *((int (***)(...))&foo+0)= 0x2040
+    
+    (int*)&foo+1=    0xbffff7c4
+    &foo.a=          0xbffff7c4
+    foo.a=           1
+    *((int*)&foo+1)= 1
+    
+    &foo.b=          0xbffff7c8
+    (int*)&foo+2=    0xbffff7c8
+    foo.b=           2
+    *((int*)&foo+2)= 2
+    
+    &foo.c=          0xbffff7cc
+    (int*)&foo+3=    0xbffff7cc
+    foo.c=           3
+    *((int*)&foo+3)= 3
+
 {% highlight cpp %}
 class Foo
 {
@@ -142,6 +182,15 @@ int main( int, char** )
   return EXIT_SUCCESS;
 }
 {% endhighlight %}
+Output:
+    foo.f()= Foo::f()
+    foo.g()= Foo::g()
+    
+    (foo.*(&Foo::f))()= Foo::f()
+    (foo.*(&Foo::g))()= Foo::g()
+    
+    (foo.*pmb_f.pfn)()= Foo::f()
+    (foo.*pmb_g.pfn)()= Foo::g()
 
 Final example
 -------------
@@ -198,3 +247,12 @@ int main( int, char** )
   return EXIT_SUCCESS;
 }
 {% endhighlight %}
+Output:
+    bar.f()= Foo::f()
+    bar.g()= Bar::g()
+    
+    (bar.*(&Bar::f))()= Foo::f()
+    (bar.*(&Bar::g))()= Bar::g()
+    
+    (bar.*pmb_f.pfn)()= Foo::f()
+    (bar.*pmb_g.pfn)()= Bar::g()
