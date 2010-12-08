@@ -7,7 +7,7 @@ Introductory example
 --------------------
 Consider the following C++ code:
 
-{% highlight c++ %}
+{% highlight cpp %}
 struct Foo
 {
   Foo()
@@ -47,12 +47,7 @@ The answer is:
 * The second constructor, the copy one, is called when the return value from `function()` at (2) is copied to a temporary at (3).
 * The third copy constructor is called when `f_main` is constructed from the temporary at (3).
 
-Now if we try to build and run this snippet with g++ using:
-
-{% highlight c++ %}
-g++ test.cpp -o test && ./test
-{% endhighlight %}
-
+Now if we try to build and run this snippet using `g++ test.cpp -o test && ./test`
 The final output is quite disappointing:
 
     Foo() @0x11111111
@@ -71,7 +66,7 @@ The C++ standard clearly states that any optimization performed by a compiler sh
 > For instance, an actual implementation need not evaluate part of an expression if it can deduce that its value is not used and that no side effects affecting the observable behavior of the program are produced.
 
 Let's look at the g++ assembly output using `g++ -c test.o && otool -tV test.o` (`otool` is the OSX equivalent of `objdump`):
-{% highlight assembly %}
+{% highlight gas %}
 function()
 {
   pushl %ebp            ; 
