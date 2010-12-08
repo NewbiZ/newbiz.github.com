@@ -24,16 +24,16 @@ Bash configuration
 -------------------
 We are now going to activate some nice features of bash. For instance, we would like to have completion working case insensitive.
 {% highlight bash %}
-    bind "set completion-ignore-case on"     # Ignore case during command line completion
-    bind "set bell-style none"               # Disable bell
-    bind "set show-all-if-ambiguous on"      # Show all possibilities with a single tab
+bind "set completion-ignore-case on"     # Ignore case during command line completion
+bind "set bell-style none"               # Disable bell
+bind "set show-all-if-ambiguous on"      # Show all possibilities with a single tab
 {% endhighlight %}
 
 Custom promt
 ------------
 Now it’s time to set up a clean prompt. The only informations we need is the current folder, and login.
 {% highlight bash %}
-    export PS1="\e[40;32m\u \e[40;34m\w \e[40;37m➤ \e[0m \[${COLOR_NC}\]"
+export PS1="\e[40;32m\u \e[40;34m\w \e[40;37m➤ \e[0m \[${COLOR_NC}\]"
 {% endhighlight %}
 
 There are a number of options for configuring a nice prompt. Here are some escaped sequences and their equivalents:
@@ -71,5 +71,5 @@ Enabling colors
 In the quest of having nice colors in the Console application on Leopard, you’ll need to install SIMBL.
 Once done, just add the following line to enable colors:
 {% highlight bash %}
-    export CLICOLOR=1;   # Enable colors in terminal
+export CLICOLOR=1;   # Enable colors in terminal
 {% endhighlight %}

@@ -178,6 +178,12 @@ a:hover
   padding-bottom: 5px;
 }
 
+#content ul
+{
+  font-size:   12px;
+  line-height: 20px;
+}
+
 /********************************************************************************
  ABOUT
  ********************************************************************************/
@@ -202,7 +208,7 @@ a:hover
 }
 
 /* Category post listing list */
-#content ul
+#content ul.large
 {
   line-height: 30px;
 }
