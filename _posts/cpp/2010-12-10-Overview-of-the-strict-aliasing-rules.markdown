@@ -1,6 +1,6 @@
 ---
 layout: page_post
-title: Overview of the strict aliasing rule
+title: Overview of the strict aliasing rules
 categories: cpp
 ---
 Understanding aliasing and restriction
@@ -75,7 +75,7 @@ function:
   movl  12(%ebp), %edx # %edx = b
   movl  $1, (%eax)     # *a = 1
   movl  $2, (%edx)     # *b = 2
-  movl  (%eax), %eax   # Reload *a in %eax (return return register)
+  movl  (%eax), %eax   # Reload *a in %eax (return register)
   leave                #
   ret                  #
 {% endhighlight %}
@@ -99,7 +99,7 @@ function:
   movl  $1, (%eax)     # *a = 1
   movl  12(%ebp), %eax # %eax = b
   movl  $2, (%eax)     # *b = 2
-  movl  $1, %eax       # return 1
+  movl  $1, %eax       # return 1 in %eax (return register)
   leave                #
   ret                  #
 {% endhighlight %}
