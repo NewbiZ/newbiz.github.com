@@ -8,12 +8,12 @@ Understanding aliasing and restriction
 We will start our journey by digging an obscure paragraph from the _ISO C89 standard_ (propagated to the following C and C++ standards). This paragraph (6.5 §7) describes what are known as the _strict aliasing rules_:
 > An object shall have its stored value accessed only by an lvalue expression that has one of the following types:
 > 
-> — a type compatible with the effective type of the object, 
-> — a qualified version of a type compatible with the effective type of the object, 
-> — a type that is the signed or unsigned type corresponding to the effective type of the object, 
-> — a type that is the signed or unsigned type corresponding to a qualified version of the effective type of the object, 
-> — an aggregate or union type that includes one of the aforementioned types among its members (including, recursively, a member of a subaggregate or contained union), or 
-> — a character type. 
+> * a type compatible with the effective type of the object, 
+> * a qualified version of a type compatible with the effective type of the object, 
+> * a type that is the signed or unsigned type corresponding to the effective type of the object, 
+> * a type that is the signed or unsigned type corresponding to a qualified version of the effective type of the object, 
+> * an aggregate or union type that includes one of the aforementioned types among its members (including, recursively, a member of a subaggregate or contained union), or 
+> * a character type. 
 
 At first, it may seem a bit obscure. What it really means, is that you cannot freely alias (or interleave, overlap) pointers and dereference them. For instance, the following code is illegal:
 {% highlight cpp %}
