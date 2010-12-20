@@ -59,3 +59,5 @@ div.highlight .vc  { color: #003333;                                        }
 div.highlight .vg  { color: #003333;                                        }
 div.highlight .vi  { color: #003333;                                        }
 div.highlight .il  { color: #FF6600;                                        }
+
+div.highlight pre  { background-color: #111111; color: #EEEEEE ;            }
