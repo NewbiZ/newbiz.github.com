@@ -39,9 +39,11 @@ What would you expect this code snippet to output ?
 
 The answer is:
 
-    Foo() @0x11111111
-    Foo( const Foo& ) @0x22222222
-    Foo( const Foo& ) @0x33333333
+<pre class="console">
+Foo() @0x11111111
+Foo( const Foo& ) @0x22222222
+Foo( const Foo& ) @0x33333333
+</pre>
 
 * The first default constructor happens when `f_function` is created at (1).
 * The second constructor, the copy one, is called when the return value from `function()` at (2) is copied to a temporary at (3).
@@ -50,7 +52,9 @@ The answer is:
 Now if we try to build and run this snippet using `g++ test.cpp -o test && ./test`
 The final output is quite disappointing:
 
-    Foo() @0x11111111
+<pre class="console">
+Foo() @0x11111111
+</pre>
 
 A look at what just happened
 ----------------------------
@@ -144,9 +148,11 @@ Sometimes we really don't want g++ to perform such optimizations, hopefully, we 
 
 Building the first example of this article with `g++ test.cpp -fno-elide-constructors -o test && ./test` now returns the expected output:
 
-    Foo() @0x11111111
-    Foo( const Foo& ) @0x22222222
-    Foo( const Foo& ) @0x33333333
+<pre class="console">
+Foo() @0x11111111
+Foo( const Foo& ) @0x22222222
+Foo( const Foo& ) @0x33333333
+</console>
 
 Things to remember
 ------------------
