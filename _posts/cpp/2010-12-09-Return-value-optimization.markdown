@@ -152,7 +152,7 @@ Building the first example of this article with `g++ test.cpp -fno-elide-constru
 Foo() @0x11111111
 Foo( const Foo& ) @0x22222222
 Foo( const Foo& ) @0x33333333
-</console>
+</pre>
 
 Things to remember
 ------------------
