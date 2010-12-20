@@ -13,7 +13,8 @@ The usage of `cpuid` is very straightforward. You provide a function identifier 
 
 The most useful functions are listed below.
 
-### Vendor ID String and maximum `cpuid` function
+Vendor ID String and maximum `cpuid` function
+---------------------------------------------
 Retrieve the processor vendor ID string (12 characters) and the maximum callable function number of cpuid.
 
 * __Input__
@@ -24,7 +25,8 @@ Retrieve the processor vendor ID string (12 characters) and the maximum callable
   * edx: Second set of 4 characters of the vendor ID
   * ecx: Third set of 4 characters of the vendor ID
 
-### Processor signature and supported features
+Processor signature and supported features
+------------------------------------------
 Retrieve the family, type, model and ID of the processor, as well as its supported instruction sets.
 
 * __Input__
@@ -35,11 +37,10 @@ Retrieve the family, type, model and ID of the processor, as well as its support
   * ecx: Bitmask. Extended features (SS3, ...).
   * edx: Bitmask. Features (MMX, SSE1, SSE2, ...)
 
-Implementation
---------------
-### Visual Studio
+MSVC implementation
+-------------------
 
-MSVC provides an easy way to use `cpuid`: [the `__cpuid()` function](http://msdn.microsoft.com/en-us/library/hskdteyh(v=vs.80).aspx).
+MSVC provides an easy way to use `cpuid`: [the `__cpuid()` function](http://msdn.microsoft.com/en-us/library/hskdteyh.aspx).
 
 {% highlight cpp %}
 uint32_t op;_     // input:  eax
@@ -47,7 +48,8 @@ uint32_t regs[4]; // output: eax, ebx, ecx, edx
 __cpuid( regs, op );
 {% endhighlight %}
 
-### GCC
+GCC implementation
+------------------
 
 We need to use inline _gas_ assembly, but there is a trick here. You might expect a simple call like the one above to work:
 
@@ -64,7 +66,7 @@ asm volatile( "cpuid"
 
 The problem is that `ebx` may be used to store the _GOT_ (Global Offset Table) if you build _PIC_ (Position Independent Code). This means GCC won't allow the clobbering of `ebx` in that case and throw an obscure error message:
 
-{% highlight bash %}
+{% highlight console %}
 error: can't find a register in class 'BREG' while reloading 'asm'
 {% endhighlight %}
 
@@ -85,7 +87,8 @@ uint32_t edx; // output: edx
                 : "cc" );
 {% endhighlight %}
 
-### Complete code
+Complete code
+-------------
 Here is the complete code for GCC and MSVC:
 
 {% highlight cpp %}
@@ -109,16 +112,13 @@ void cpuid( uint32_t op, uint32_t& eax, uint32_t& ebx, uint32_t& ecx, uint32_t& 
 #if defined(__GNUC__)
   // GCC won't allow us to clobber EBX since its used to store the GOT. So we need to
   // lie to GCC and backup/restore EBX without declaring it as clobbered.
-  //asm volatile( "pushl %%ebx   \n\t"
-  //              "cpuid         \n\t"
-  //              "movl %%ebx, %1\n\t"
-  //              "popl %%ebx    \n\t"
-  //              : "=a"(eax), "=r"(ebx), "=c"(ecx), "=d"(edx)
-  //              : "a"(op)
-  //              : "cc" );
-  asm volatile( "cpuid"
-                : "=a"(eax), "=b"(ebx), "=c"(ecx), "=d"(edx)
-                : "a" (op) );
+  asm volatile( "pushl %%ebx   \n\t"
+                "cpuid         \n\t"
+                "movl %%ebx, %1\n\t"
+                "popl %%ebx    \n\t"
+                : "=a"(eax), "=r"(ebx), "=c"(ecx), "=d"(edx)
+                : "a"(op)
+                : "cc" );
 #elif defined(_WIN32)
   // MSVC provides a __cpuid function
   int regs[4];
@@ -228,7 +228,8 @@ void cpuid_procname( char* name )
 }
 {% endhighlight %}
 
-### Sample usage
+Sample usage
+------------
 And a sample of how to use it:
 
 {% highlight cpp %}
