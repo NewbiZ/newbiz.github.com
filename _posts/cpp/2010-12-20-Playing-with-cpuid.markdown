@@ -66,9 +66,9 @@ asm volatile( "cpuid"
 
 The problem is that `ebx` may be used to store the _GOT_ (Global Offset Table) if you build _PIC_ (Position Independent Code). This means GCC won't allow the clobbering of `ebx` in that case and throw an obscure error message:
 
-{% highlight console %}
+<pre class="console">
 error: can't find a register in class 'BREG' while reloading 'asm'
-{% endhighlight %}
+</pre>
 
 But don't worry, we don't actually have to tell the truth to GCC about our `ebx` clobbering. All we have to do, is backup `ebx` before our `cpuid` call, copy the result that was in `ebx` elsewhere, and restore its previous value.
 
