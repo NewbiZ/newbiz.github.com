@@ -289,6 +289,12 @@ a:hover
   background-color: #F0F0F0;
 }
 
+#content pre.console
+{
+  background-color: #111111;
+  color:            #EEEEEE ;
+}
+
 #content pre span
 {
   font-family: Courier New;

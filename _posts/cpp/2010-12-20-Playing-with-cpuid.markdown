@@ -78,13 +78,13 @@ uint32_t eax; // output: eax
 uint32_t ebx; // output: ebx
 uint32_t ecx; // output: ecx
 uint32_t edx; // output: edx
-  asm volatile( "pushl %%ebx   \n\t" // Backup %ebx
-                "cpuid         \n\t" // Call cpuid
-                "movl %%ebx, %1\n\t" // Copy the %ebx result elsewhere
-                "popl %%ebx    \n\t" // Restore %ebx
-                : "=a"(eax), "=r"(ebx), "=c"(ecx), "=d"(edx)
-                : "a"(op)
-                : "cc" );
+asm volatile( "pushl %%ebx   \n\t" // Backup %ebx
+              "cpuid         \n\t" // Call cpuid
+              "movl %%ebx, %1\n\t" // Copy the %ebx result elsewhere
+              "popl %%ebx    \n\t" // Restore %ebx
+              : "=a"(eax), "=r"(ebx), "=c"(ecx), "=d"(edx)
+              : "a"(op)
+              : "cc" );
 {% endhighlight %}
 
 Complete code

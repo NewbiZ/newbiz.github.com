@@ -59,6 +59,3 @@ div.highlight .vc  { color: #003333;                                        }
 div.highlight .vg  { color: #003333;                                        }
 div.highlight .vi  { color: #003333;                                        }
 div.highlight .il  { color: #FF6600;                                        }
-
-/* Raw console output extension, use <pre class="console"></pre> */
-pre.console { background-color: #111111; color: #EEEEEE ; }
