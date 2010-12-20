@@ -283,7 +283,7 @@ a:hover
   border-radius:    10px;                
   padding:          10px;
   font-family:      Monaco, Courier New;
-  font-size:        14px;
+  font-size:        12px;
   margin:           0;
   border:           1px solid #CCCCCC;
   background-color: #F0F0F0;
@@ -298,7 +298,7 @@ a:hover
 
 #content pre span
 {
-  font-family: Courier New;
+  font-family: Monaco, Courier New;
 }
 
 #content pre span.line-numbers
