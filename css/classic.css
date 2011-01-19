@@ -78,6 +78,7 @@ a:hover
  ********************************************************************************/
 #header
 {
+  background:    url(/images/header_background.png);
   background:    -webkit-gradient(linear, left top, left bottom, from(#444444), to(#333333));
   height:        50px;
   border-radius: 10px;
