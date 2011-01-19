@@ -249,6 +249,7 @@ a:hover
   display: block;
   width:   49%;
   float:   left;
+  clear:   left;
 }
 
 #content #smallpost_cpp
@@ -256,6 +257,7 @@ a:hover
   display: block;
   width:   49%;
   float:   right;
+  clear:   right;
 }
 
 #content #smallpost_tutorials
@@ -263,6 +265,7 @@ a:hover
   display: block;
   width:   49%;
   float:   left;
+  clear:   left;
 }
 
 #content #smallpost_news
@@ -270,6 +273,7 @@ a:hover
   display: block;
   width:   49%;
   float:   right;
+  clear:   right;
 }
 
 /********************************************************************************
