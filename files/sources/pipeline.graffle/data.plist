@@ -44,11 +44,247 @@
 	<key>Creator</key>
 	<string>Aurelien Vallee</string>
 	<key>DisplayScale</key>
-	<string>1 0/72 in = 1 0/72 in</string>
+	<string>1 0/72 in = 1.0000 in</string>
 	<key>GraphDocumentVersion</key>
 	<integer>6</integer>
 	<key>GraphicsList</key>
 	<array>
+		<dict>
+			<key>Class</key>
+			<string>LineGraphic</string>
+			<key>Head</key>
+			<dict>
+				<key>ID</key>
+				<integer>583</integer>
+			</dict>
+			<key>ID</key>
+			<integer>589</integer>
+			<key>Points</key>
+			<array>
+				<string>{251.25, 1194.68}</string>
+				<string>{271.5, 1194.41}</string>
+			</array>
+			<key>Style</key>
+			<dict>
+				<key>stroke</key>
+				<dict>
+					<key>HeadArrow</key>
+					<string>0</string>
+					<key>Pattern</key>
+					<integer>1</integer>
+					<key>TailArrow</key>
+					<string>0</string>
+				</dict>
+			</dict>
+			<key>Tail</key>
+			<dict>
+				<key>ID</key>
+				<integer>588</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>Group</string>
+			<key>Graphics</key>
+			<array>
+				<dict>
+					<key>Bounds</key>
+					<string>{{41.75, 1178.44}, {202.737, 44.4082}}</string>
+					<key>Class</key>
+					<string>ShapedGraphic</string>
+					<key>FontInfo</key>
+					<dict>
+						<key>Font</key>
+						<string>HelveticaNeue</string>
+						<key>Size</key>
+						<real>13</real>
+					</dict>
+					<key>ID</key>
+					<integer>587</integer>
+					<key>Shape</key>
+					<string>Rectangle</string>
+					<key>Style</key>
+					<dict>
+						<key>fill</key>
+						<dict>
+							<key>Color</key>
+							<dict>
+								<key>b</key>
+								<string>0.4</string>
+								<key>g</key>
+								<string>1</string>
+								<key>r</key>
+								<string>0.8</string>
+							</dict>
+						</dict>
+						<key>shadow</key>
+						<dict>
+							<key>Draws</key>
+							<string>NO</string>
+						</dict>
+						<key>stroke</key>
+						<dict>
+							<key>Draws</key>
+							<string>NO</string>
+						</dict>
+					</dict>
+					<key>Text</key>
+					<dict>
+						<key>Pad</key>
+						<integer>2</integer>
+						<key>Text</key>
+						<string>{\rtf1\ansi\ansicpg1252\cocoartf949\cocoasubrtf540
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc\pardirnatural
+
+\f0\fs26 \cf0 Early depth test may happen here if fragment shader does not modify depth.}</string>
+						<key>VerticalPad</key>
+						<integer>2</integer>
+					</dict>
+				</dict>
+				<dict>
+					<key>Bounds</key>
+					<string>{{36.75, 1164.07}, {214, 64.0001}}</string>
+					<key>Class</key>
+					<string>ShapedGraphic</string>
+					<key>ID</key>
+					<integer>588</integer>
+					<key>Shape</key>
+					<string>NoteShape</string>
+					<key>Style</key>
+					<dict>
+						<key>fill</key>
+						<dict>
+							<key>Color</key>
+							<dict>
+								<key>b</key>
+								<string>0.4</string>
+								<key>g</key>
+								<string>1</string>
+								<key>r</key>
+								<string>0.8</string>
+							</dict>
+						</dict>
+					</dict>
+				</dict>
+			</array>
+			<key>ID</key>
+			<integer>586</integer>
+		</dict>
+		<dict>
+			<key>Bounds</key>
+			<string>{{363.5, 2317.13}, {101.5, 53}}</string>
+			<key>Class</key>
+			<string>ShapedGraphic</string>
+			<key>ID</key>
+			<integer>585</integer>
+			<key>Shape</key>
+			<string>Rectangle</string>
+			<key>Style</key>
+			<dict>
+				<key>shadow</key>
+				<dict>
+					<key>Draws</key>
+					<string>NO</string>
+				</dict>
+				<key>stroke</key>
+				<dict>
+					<key>CornerRadius</key>
+					<real>9</real>
+					<key>Pattern</key>
+					<integer>1</integer>
+				</dict>
+			</dict>
+			<key>Text</key>
+			<dict>
+				<key>Text</key>
+				<string>{\rtf1\ansi\ansicpg1252\cocoartf949\cocoasubrtf540
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc\pardirnatural
+
+\f0\fs24 \cf0 Implementation dependent process}</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>LineGraphic</string>
+			<key>Head</key>
+			<dict>
+				<key>ID</key>
+				<integer>13</integer>
+			</dict>
+			<key>ID</key>
+			<integer>584</integer>
+			<key>OrthogonalBarAutomatic</key>
+			<false/>
+			<key>OrthogonalBarPosition</key>
+			<real>0.0</real>
+			<key>Points</key>
+			<array>
+				<string>{322.388, 1212.25}</string>
+				<string>{322.145, 1252.5}</string>
+			</array>
+			<key>Style</key>
+			<dict>
+				<key>stroke</key>
+				<dict>
+					<key>Color</key>
+					<dict>
+						<key>b</key>
+						<string>1</string>
+						<key>g</key>
+						<string>0</string>
+						<key>r</key>
+						<string>0</string>
+					</dict>
+					<key>HeadArrow</key>
+					<string>FilledArrow</string>
+					<key>LineType</key>
+					<integer>2</integer>
+					<key>TailArrow</key>
+					<string>0</string>
+					<key>Width</key>
+					<real>2</real>
+				</dict>
+			</dict>
+			<key>Tail</key>
+			<dict>
+				<key>ID</key>
+				<integer>583</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>Bounds</key>
+			<string>{{272, 1175.75}, {101, 36}}</string>
+			<key>Class</key>
+			<string>ShapedGraphic</string>
+			<key>ID</key>
+			<integer>583</integer>
+			<key>Shape</key>
+			<string>Rectangle</string>
+			<key>Style</key>
+			<dict>
+				<key>stroke</key>
+				<dict>
+					<key>CornerRadius</key>
+					<real>9</real>
+					<key>Pattern</key>
+					<integer>1</integer>
+				</dict>
+			</dict>
+			<key>Text</key>
+			<dict>
+				<key>Text</key>
+				<string>{\rtf1\ansi\ansicpg1252\cocoartf949\cocoasubrtf540
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc\pardirnatural
+
+\f0\fs24 \cf0 Early depth test}</string>
+			</dict>
+		</dict>
 		<dict>
 			<key>Bounds</key>
 			<string>{{281.746, 245.766}, {80.5062, 30}}</string>
@@ -56,15 +292,6 @@
 			<string>ShapedGraphic</string>
 			<key>ID</key>
 			<integer>445</integer>
-			<key>Line</key>
-			<dict>
-				<key>ID</key>
-				<integer>43</integer>
-				<key>Position</key>
-				<real>0.4767671525478363</real>
-				<key>RotationType</key>
-				<integer>4</integer>
-			</dict>
 			<key>Rotation</key>
 			<real>179.28828430175781</real>
 			<key>Shape</key>
@@ -284,8 +511,8 @@ glDisableClientState()}</string>
 			<integer>578</integer>
 			<key>Points</key>
 			<array>
-				<string>{703.144, 2164}</string>
-				<string>{703.285, 2192.38}</string>
+				<string>{703.144, 2266.25}</string>
+				<string>{703.285, 2294.63}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -312,7 +539,7 @@ glDisableClientState()}</string>
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{608.5, 2207.32}, {190, 72.0547}}</string>
+					<string>{{608.5, 2309.57}, {190, 72.0547}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FontInfo</key>
@@ -370,7 +597,7 @@ glDisableClientState()}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{608.5, 2192.88}, {190, 85.7356}}</string>
+					<string>{{608.5, 2295.13}, {190, 85.7356}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -409,7 +636,7 @@ glDisableClientState()}</string>
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{656.875, 2041.5}, {118.5, 103.75}}</string>
+					<string>{{656.875, 2143.75}, {118.5, 103.75}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FontInfo</key>
@@ -437,17 +664,17 @@ glDisableClientState()}</string>
 						<key>Text</key>
 						<string>{\rtf1\ansi\ansicpg1252\cocoartf949\cocoasubrtf540
 {\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc\pardirnatural
 
-\f0\fs24 \cf2 Depth buffer}</string>
+\f0\fs24 \cf0 Depth buffer}</string>
 					</dict>
 					<key>TextPlacement</key>
 					<integer>0</integer>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{647.875, 2022.5}, {118.5, 103.75}}</string>
+					<string>{{647.875, 2124.75}, {118.5, 103.75}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FontInfo</key>
@@ -475,17 +702,17 @@ glDisableClientState()}</string>
 						<key>Text</key>
 						<string>{\rtf1\ansi\ansicpg1252\cocoartf949\cocoasubrtf540
 {\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red255\green255\blue255;}
+{\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc\pardirnatural
 
-\f0\fs24 \cf2 Color buffer}</string>
+\f0\fs24 \cf1 Color buffer}</string>
 					</dict>
 					<key>TextPlacement</key>
 					<integer>0</integer>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{638.875, 2003.5}, {118.5, 103.75}}</string>
+					<string>{{638.875, 2105.75}, {118.5, 103.75}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -509,7 +736,7 @@ glDisableClientState()}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{629.875, 1984.5}, {118.5, 103.75}}</string>
+					<string>{{629.875, 2086.75}, {118.5, 103.75}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -537,7 +764,7 @@ glDisableClientState()}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{623, 1598.75}, {144.5, 115}}</string>
+			<string>{{623, 1701}, {144.5, 115}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>FontInfo</key>
@@ -565,17 +792,17 @@ glDisableClientState()}</string>
 				<key>Text</key>
 				<string>{\rtf1\ansi\ansicpg1252\cocoartf949\cocoasubrtf540
 {\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red255\green255\blue255;}
+{\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc\pardirnatural
 
-\f0\fs24 \cf2 Front buffer}</string>
+\f0\fs24 \cf1 Front buffer}</string>
 			</dict>
 			<key>TextPlacement</key>
 			<integer>0</integer>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{623, 1714.12}, {144.5, 115}}</string>
+			<string>{{623, 1816.37}, {144.5, 115}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>FontInfo</key>
@@ -603,10 +830,10 @@ glDisableClientState()}</string>
 				<key>Text</key>
 				<string>{\rtf1\ansi\ansicpg1252\cocoartf949\cocoasubrtf540
 {\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red255\green255\blue255;}
+{\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc\pardirnatural
 
-\f0\fs24 \cf2 Back buffer}</string>
+\f0\fs24 \cf1 Back buffer}</string>
 			</dict>
 			<key>TextPlacement</key>
 			<integer>0</integer>
@@ -618,10 +845,10 @@ glDisableClientState()}</string>
 			<integer>561</integer>
 			<key>Points</key>
 			<array>
-				<string>{767.5, 1745.12}</string>
-				<string>{801.5, 1729.75}</string>
-				<string>{800.5, 1697.75}</string>
-				<string>{767.5, 1684.12}</string>
+				<string>{767.5, 1847.37}</string>
+				<string>{801.5, 1832}</string>
+				<string>{800.5, 1800}</string>
+				<string>{767.5, 1786.37}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -645,10 +872,10 @@ glDisableClientState()}</string>
 			<integer>560</integer>
 			<key>Points</key>
 			<array>
-				<string>{766.5, 2031.75}</string>
-				<string>{813.5, 2031.75}</string>
-				<string>{813.5, 1794.75}</string>
-				<string>{767.5, 1794.75}</string>
+				<string>{766.5, 2134}</string>
+				<string>{813.5, 2134}</string>
+				<string>{813.5, 1897}</string>
+				<string>{767.5, 1897}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -675,10 +902,10 @@ glDisableClientState()}</string>
 			<integer>31</integer>
 			<key>Points</key>
 			<array>
-				<string>{386.983, 2126.87}</string>
-				<string>{448.5, 2126.75}</string>
-				<string>{448.5, 2059.75}</string>
-				<string>{619.375, 2059.58}</string>
+				<string>{386.983, 2229.12}</string>
+				<string>{448.5, 2229}</string>
+				<string>{448.5, 2162}</string>
+				<string>{619.375, 2161.83}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -700,7 +927,7 @@ glDisableClientState()}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{607.625, 1574.75}, {177.75, 267}}</string>
+			<string>{{607.625, 1677}, {177.75, 267}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -748,7 +975,7 @@ glDisableClientState()}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{619.875, 1955.5}, {165.5, 208}}</string>
+			<string>{{619.875, 2057.75}, {165.5, 208}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -806,7 +1033,7 @@ glDisableClientState()}</string>
 					<array>
 						<dict>
 							<key>Bounds</key>
-							<string>{{650.625, 2021.75}, {118.5, 103.75}}</string>
+							<string>{{650.625, 2124}, {118.5, 103.75}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>ID</key>
@@ -843,7 +1070,7 @@ glDisableClientState()}</string>
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{641.625, 2002.75}, {118.5, 103.75}}</string>
+							<string>{{641.625, 2105}, {118.5, 103.75}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>ID</key>
@@ -880,7 +1107,7 @@ glDisableClientState()}</string>
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{632.625, 1983.75}, {118.5, 103.75}}</string>
+							<string>{{632.625, 2086}, {118.5, 103.75}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>ID</key>
@@ -917,7 +1144,7 @@ glDisableClientState()}</string>
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{623.625, 1964.75}, {118.5, 103.75}}</string>
+							<string>{{623.625, 2067}, {118.5, 103.75}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>ID</key>
@@ -958,7 +1185,7 @@ glDisableClientState()}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{613.625, 1935.75}, {165.5, 208}}</string>
+					<string>{{613.625, 2038}, {165.5, 208}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -1032,7 +1259,7 @@ glDisableClientState()}</string>
 					<array>
 						<dict>
 							<key>Bounds</key>
-							<string>{{644.625, 2000.75}, {118.5, 103.75}}</string>
+							<string>{{644.625, 2103}, {118.5, 103.75}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>ID</key>
@@ -1069,7 +1296,7 @@ glDisableClientState()}</string>
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{635.625, 1981.75}, {118.5, 103.75}}</string>
+							<string>{{635.625, 2084}, {118.5, 103.75}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>ID</key>
@@ -1106,7 +1333,7 @@ glDisableClientState()}</string>
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{626.625, 1962.75}, {118.5, 103.75}}</string>
+							<string>{{626.625, 2065}, {118.5, 103.75}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>ID</key>
@@ -1143,7 +1370,7 @@ glDisableClientState()}</string>
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{617.625, 1943.75}, {118.5, 103.75}}</string>
+							<string>{{617.625, 2046}, {118.5, 103.75}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>ID</key>
@@ -1184,7 +1411,7 @@ glDisableClientState()}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{607.625, 1914.75}, {165.5, 208}}</string>
+					<string>{{607.625, 2017}, {165.5, 208}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -1273,7 +1500,7 @@ glDisableClientState()}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{250.634, 2090.5}, {144.5, 73}}</string>
+			<string>{{250.634, 2192.75}, {144.5, 73}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -1315,8 +1542,8 @@ glDisableClientState()}</string>
 			<real>0.0</real>
 			<key>Points</key>
 			<array>
-				<string>{322.884, 2069.38}</string>
-				<string>{322.884, 2091.88}</string>
+				<string>{322.884, 2171.63}</string>
+				<string>{322.884, 2194.13}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -1359,8 +1586,8 @@ glDisableClientState()}</string>
 			<integer>477</integer>
 			<key>Points</key>
 			<array>
-				<string>{373.384, 1528.56}</string>
-				<string>{385.269, 1529.3}</string>
+				<string>{373.384, 1630.81}</string>
+				<string>{385.269, 1631.55}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -1382,7 +1609,7 @@ glDisableClientState()}</string>
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{387.082, 1524.56}, {194.116, 29.7675}}</string>
+					<string>{{387.082, 1626.81}, {194.116, 29.7675}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FontInfo</key>
@@ -1435,8 +1662,9 @@ glDisableClientState()}</string>
 
 \f0\fs26 \cf0 Accept or reject fragment\
 according to alpha test:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc\pardirnatural
 
-\f1\fs22 glAlphaFunc()}</string>
+\f1\fs22 \cf0 glAlphaFunc()}</string>
 						<key>VerticalPad</key>
 						<integer>2</integer>
 					</dict>
@@ -1445,7 +1673,7 @@ according to alpha test:\
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{385.768, 1503.5}, {198.232, 64}}</string>
+					<string>{{385.768, 1605.75}, {198.232, 64}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -1474,7 +1702,7 @@ according to alpha test:\
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{272.384, 1509.62}, {101, 36}}</string>
+			<string>{{272.384, 1611.87}, {101, 36}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -1516,8 +1744,8 @@ according to alpha test:\
 			<real>0.0</real>
 			<key>Points</key>
 			<array>
-				<string>{322.776, 1546.12}</string>
-				<string>{322.554, 1584.25}</string>
+				<string>{322.776, 1648.37}</string>
+				<string>{322.553, 1686.5}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -1560,8 +1788,8 @@ according to alpha test:\
 			<integer>471</integer>
 			<key>Points</key>
 			<array>
-				<string>{239.25, 1309.64}</string>
-				<string>{271.384, 1309.64}</string>
+				<string>{239.25, 1411.89}</string>
+				<string>{271.384, 1411.89}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -1588,7 +1816,7 @@ according to alpha test:\
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{53.189, 1296.13}, {180, 34}}</string>
+					<string>{{53.189, 1398.38}, {180, 34}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FontInfo</key>
@@ -1646,7 +1874,7 @@ according to alpha test:\
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{48.75, 1285.14}, {190, 49}}</string>
+					<string>{{48.75, 1387.39}, {190, 49}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -1685,8 +1913,8 @@ according to alpha test:\
 			<integer>467</integer>
 			<key>Points</key>
 			<array>
-				<string>{391.75, 1237.3}</string>
-				<string>{373, 1237.29}</string>
+				<string>{391.75, 1339.55}</string>
+				<string>{373, 1339.54}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -1713,7 +1941,7 @@ according to alpha test:\
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{396.689, 1214.49}, {180, 57.6315}}</string>
+					<string>{{396.689, 1316.74}, {180, 57.6315}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FontInfo</key>
@@ -1766,15 +1994,16 @@ according to alpha test:\
 
 \f0\fs26 \cf0 Tweak fragment color from\
 viewpoint distance and fog equation:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qj\pardirnatural
 
-\f1\fs22 glFog()}</string>
+\f1\fs22 \cf0 glFog()}</string>
 						<key>VerticalPad</key>
 						<integer>2</integer>
 					</dict>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{392.25, 1195.85}, {190, 83.0572}}</string>
+					<string>{{392.25, 1298.1}, {190, 83.0572}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -1803,7 +2032,7 @@ viewpoint distance and fog equation:\
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{271.884, 1291.64}, {101, 36}}</string>
+			<string>{{271.884, 1393.89}, {101, 36}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -1831,7 +2060,7 @@ viewpoint distance and fog equation:\
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{271.5, 1219.25}, {101, 36}}</string>
+			<string>{{271.5, 1321.5}, {101, 36}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -1873,8 +2102,8 @@ viewpoint distance and fog equation:\
 			<real>0.0</real>
 			<key>Points</key>
 			<array>
-				<string>{322.51, 1328.14}</string>
-				<string>{322.758, 1364.5}</string>
+				<string>{322.51, 1430.39}</string>
+				<string>{322.758, 1466.75}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -1921,8 +2150,8 @@ viewpoint distance and fog equation:\
 			<real>0.0</real>
 			<key>Points</key>
 			<array>
-				<string>{322.098, 1255.75}</string>
-				<string>{322.286, 1291.14}</string>
+				<string>{322.098, 1358}</string>
+				<string>{322.286, 1393.39}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -1969,8 +2198,8 @@ viewpoint distance and fog equation:\
 			<real>11</real>
 			<key>Points</key>
 			<array>
-				<string>{638, 1228.04}</string>
-				<string>{372.991, 1178.32}</string>
+				<string>{638, 1330.29}</string>
+				<string>{372.991, 1280.57}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -1992,7 +2221,7 @@ viewpoint distance and fog equation:\
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{408.5, 1131.64}, {129, 34}}</string>
+			<string>{{406, 1233.13}, {129, 34}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>FitText</key>
@@ -2193,8 +2422,8 @@ and uniforms}</string>
 			<integer>450</integer>
 			<key>Points</key>
 			<array>
-				<string>{383.5, 259.112}</string>
-				<string>{361.488, 259.723}</string>
+				<string>{383.5, 259.097}</string>
+				<string>{361.446, 259.705}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -2315,7 +2544,7 @@ and uniforms}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{258.5, 2297.62}, {190, 57}}</string>
+			<string>{{258.5, 2399.87}, {190, 57}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -2371,7 +2600,7 @@ and uniforms}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{49.5, 2297.62}, {190, 57}}</string>
+			<string>{{49.5, 2399.87}, {190, 57}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -2427,7 +2656,7 @@ and uniforms}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{467.5, 2317.38}, {103, 20}}</string>
+			<string>{{474.75, 2423.63}, {103, 20}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>FitText</key>
@@ -2502,8 +2731,8 @@ and uniforms}</string>
 			<real>0.0</real>
 			<key>Points</key>
 			<array>
-				<string>{479.5, 2341.38}</string>
-				<string>{560.5, 2341.38}</string>
+				<string>{486.75, 2447.63}</string>
+				<string>{567.75, 2447.63}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -2531,7 +2760,7 @@ and uniforms}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{471, 2269.38}, {98, 20}}</string>
+			<string>{{478.25, 2375.63}, {98, 20}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>FitText</key>
@@ -2606,8 +2835,8 @@ and uniforms}</string>
 			<real>0.0</real>
 			<key>Points</key>
 			<array>
-				<string>{481, 2293.38}</string>
-				<string>{562, 2293.38}</string>
+				<string>{488.25, 2399.63}</string>
+				<string>{569.25, 2399.63}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -2635,7 +2864,7 @@ and uniforms}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{475.5, 2221.38}, {87, 20}}</string>
+			<string>{{482.75, 2327.63}, {87, 20}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>FitText</key>
@@ -2710,8 +2939,8 @@ and uniforms}</string>
 			<real>0.0</real>
 			<key>Points</key>
 			<array>
-				<string>{479.5, 2245.38}</string>
-				<string>{560.5, 2245.38}</string>
+				<string>{486.75, 2351.63}</string>
+				<string>{567.75, 2351.63}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -2767,7 +2996,7 @@ and uniforms}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{284.5, 2221.38}, {101.5, 36}}</string>
+			<string>{{250.75, 2323.63}, {101.5, 36}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -2800,7 +3029,7 @@ and uniforms}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{153.5, 2221.38}, {101, 36}}</string>
+			<string>{{138.5, 2323.63}, {101, 36}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -2845,7 +3074,7 @@ and uniforms}</string>
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{50.924, 2231.97}, {71.1519, 14.8052}}</string>
+					<string>{{54.674, 2334.22}, {71.1519, 14.8052}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FontInfo</key>
@@ -2903,7 +3132,7 @@ and uniforms}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{49.5, 2214.88}, {74, 49}}</string>
+					<string>{{53.25, 2317.13}, {74, 49}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -3055,7 +3284,7 @@ glPointParameter()}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{271.884, 1584.75}, {101, 57}}</string>
+			<string>{{271.884, 1687}, {101, 57}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -3068,6 +3297,8 @@ glPointParameter()}</string>
 				<dict>
 					<key>CornerRadius</key>
 					<real>9</real>
+					<key>Pattern</key>
+					<integer>1</integer>
 				</dict>
 			</dict>
 			<key>Text</key>
@@ -3083,7 +3314,7 @@ glPointParameter()}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{272.384, 1434.5}, {101, 36}}</string>
+			<string>{{272.384, 1536.75}, {101, 36}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -3111,7 +3342,7 @@ glPointParameter()}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{272.384, 1365}, {101, 36}}</string>
+			<string>{{272.384, 1467.25}, {101, 36}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -3146,7 +3377,7 @@ glPointParameter()}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{271.5, 1150.75}, {101, 36}}</string>
+			<string>{{271.5, 1253}, {101, 36}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -3181,7 +3412,7 @@ glPointParameter()}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{272.384, 2032.88}, {101, 36}}</string>
+			<string>{{272.384, 2135.13}, {101, 36}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -3209,7 +3440,7 @@ glPointParameter()}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{272.384, 1975.25}, {101, 36}}</string>
+			<string>{{272.384, 2077.5}, {101, 36}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -3237,7 +3468,7 @@ glPointParameter()}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{272.384, 1899.75}, {101, 49}}</string>
+			<string>{{272.384, 2002}, {101, 49}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -3265,7 +3496,7 @@ glPointParameter()}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{272.384, 1839.5}, {101, 36}}</string>
+			<string>{{272.384, 1941.75}, {101, 36}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -3278,6 +3509,8 @@ glPointParameter()}</string>
 				<dict>
 					<key>CornerRadius</key>
 					<real>9</real>
+					<key>Pattern</key>
+					<integer>1</integer>
 				</dict>
 			</dict>
 			<key>Text</key>
@@ -3293,7 +3526,7 @@ glPointParameter()}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{271.384, 1758.25}, {101, 57}}</string>
+			<string>{{271.384, 1860.5}, {101, 57}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -3321,7 +3554,7 @@ glPointParameter()}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{271.884, 1665.75}, {101, 64}}</string>
+			<string>{{271.884, 1768}, {101, 64}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -3635,7 +3868,7 @@ glPointParameter()}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{440, 132.335}, {90, 34}}</string>
+			<string>{{400, 96.7274}, {90, 34}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>FitText</key>
@@ -3674,14 +3907,14 @@ glPointParameter()}</string>
 			<key>Text</key>
 			<dict>
 				<key>Align</key>
-				<integer>2</integer>
+				<integer>0</integer>
 				<key>Pad</key>
 				<integer>2</integer>
 				<key>Text</key>
 				<string>{\rtf1\ansi\ansicpg1252\cocoartf949\cocoasubrtf540
 {\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
 {\colortbl;\red255\green255\blue255;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qr\pardirnatural
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
 \f0\fs26 \cf0 Requests from\
 VAs &amp; DLs}</string>
@@ -3707,7 +3940,7 @@ VAs &amp; DLs}</string>
 			<real>108</real>
 			<key>Points</key>
 			<array>
-				<string>{632.5, 76.8564}</string>
+				<string>{632.5, 76.8563}</string>
 				<string>{399.296, 149.715}</string>
 			</array>
 			<key>Style</key>
@@ -3740,8 +3973,8 @@ VAs &amp; DLs}</string>
 			<integer>418</integer>
 			<key>Points</key>
 			<array>
-				<string>{218.999, 166.995}</string>
-				<string>{224.001, 167.358}</string>
+				<string>{218.999, 166.967}</string>
+				<string>{224.001, 167.329}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -3873,7 +4106,7 @@ VAs &amp; DLs}</string>
 					<key>AllowConnections</key>
 					<string>NO</string>
 					<key>Bounds</key>
-					<string>{{638, 1178.75}, {114.667, 96.8573}}</string>
+					<string>{{638, 1281}, {114.667, 96.8573}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -3912,7 +4145,7 @@ VAs &amp; DLs}</string>
 					<key>AllowConnections</key>
 					<string>NO</string>
 					<key>Bounds</key>
-					<string>{{645.167, 1186.82}, {114.667, 96.8573}}</string>
+					<string>{{645.167, 1289.07}, {114.667, 96.8573}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -3939,7 +4172,7 @@ VAs &amp; DLs}</string>
 					<key>AllowConnections</key>
 					<string>NO</string>
 					<key>Bounds</key>
-					<string>{{652.333, 1194.89}, {114.667, 96.8573}}</string>
+					<string>{{652.333, 1297.14}, {114.667, 96.8573}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -3987,8 +4220,8 @@ VAs &amp; DLs}</string>
 			<integer>407</integer>
 			<key>Points</key>
 			<array>
-				<string>{389.384, 1383}</string>
-				<string>{373.884, 1383}</string>
+				<string>{389.384, 1485.25}</string>
+				<string>{373.884, 1485.25}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -4015,7 +4248,7 @@ VAs &amp; DLs}</string>
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{394.323, 1358.89}, {180, 60.7142}}</string>
+					<string>{{394.323, 1461.14}, {180, 60.7142}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FontInfo</key>
@@ -4073,7 +4306,7 @@ VAs &amp; DLs}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{389.884, 1339.25}, {190, 87.4999}}</string>
+					<string>{{389.884, 1441.5}, {190, 87.4999}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -4112,8 +4345,8 @@ VAs &amp; DLs}</string>
 			<integer>403</integer>
 			<key>Points</key>
 			<array>
-				<string>{251.25, 1171.9}</string>
-				<string>{271, 1171.02}</string>
+				<string>{251.249, 1274.15}</string>
+				<string>{271, 1273.27}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -4140,7 +4373,7 @@ VAs &amp; DLs}</string>
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{41.75, 1163.5}, {202.737, 33.2273}}</string>
+					<string>{{41.75, 1265.75}, {202.737, 33.2273}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FontInfo</key>
@@ -4196,7 +4429,7 @@ VAs &amp; DLs}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{36.75, 1152.75}, {214, 47.8864}}</string>
+					<string>{{36.75, 1255}, {214, 47.8864}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -4236,7 +4469,7 @@ VAs &amp; DLs}</string>
 			<key>Points</key>
 			<array>
 				<string>{248.901, 855.536}</string>
-				<string>{210.819, 837.464}</string>
+				<string>{210.82, 837.464}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -4837,8 +5070,8 @@ VAs &amp; DLs}</string>
 			<integer>379</integer>
 			<key>Points</key>
 			<array>
-				<string>{373.884, 1857.5}</string>
-				<string>{389.384, 1857.5}</string>
+				<string>{373.884, 1959.75}</string>
+				<string>{389.384, 1959.75}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -4865,7 +5098,7 @@ VAs &amp; DLs}</string>
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{393.46, 1850.09}, {187.796, 24.6512}}</string>
+					<string>{{393.46, 1952.34}, {187.796, 24.6512}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FontInfo</key>
@@ -4925,7 +5158,7 @@ extension}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{389.884, 1831}, {194.116, 53}}</string>
+					<string>{{389.884, 1933.25}, {194.116, 53}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -4969,8 +5202,8 @@ extension}</string>
 			<integer>375</integer>
 			<key>Points</key>
 			<array>
-				<string>{373.384, 1614.19}</string>
-				<string>{385.269, 1614.41}</string>
+				<string>{373.384, 1716.44}</string>
+				<string>{385.268, 1716.66}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -4997,7 +5230,7 @@ extension}</string>
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{389.42, 1610.38}, {191.777, 19.5349}}</string>
+					<string>{{389.42, 1712.63}, {191.777, 19.5349}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FontInfo</key>
@@ -5057,7 +5290,7 @@ extension}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{385.768, 1595.25}, {198.232, 42}}</string>
+					<string>{{385.768, 1697.5}, {198.232, 42}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -5096,8 +5329,8 @@ extension}</string>
 			<integer>369</integer>
 			<key>Points</key>
 			<array>
-				<string>{271.885, 2053.83}</string>
-				<string>{259.883, 2054.52}</string>
+				<string>{271.885, 2156.08}</string>
+				<string>{259.883, 2156.78}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -5129,8 +5362,8 @@ extension}</string>
 			<integer>368</integer>
 			<key>Points</key>
 			<array>
-				<string>{373.884, 1993.25}</string>
-				<string>{389.384, 1993.25}</string>
+				<string>{373.884, 2095.5}</string>
+				<string>{389.384, 2095.5}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -5162,8 +5395,8 @@ extension}</string>
 			<integer>367</integer>
 			<key>Points</key>
 			<array>
-				<string>{271.885, 1922.31}</string>
-				<string>{259.884, 1921.85}</string>
+				<string>{271.884, 2024.56}</string>
+				<string>{259.884, 2024.1}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -5195,8 +5428,8 @@ extension}</string>
 			<integer>366</integer>
 			<key>Points</key>
 			<array>
-				<string>{270.885, 1789.48}</string>
-				<string>{259.884, 1790.07}</string>
+				<string>{270.885, 1891.73}</string>
+				<string>{259.883, 1892.32}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -5228,8 +5461,8 @@ extension}</string>
 			<integer>365</integer>
 			<key>Points</key>
 			<array>
-				<string>{373.384, 1699.01}</string>
-				<string>{385.269, 1699.3}</string>
+				<string>{373.384, 1801.26}</string>
+				<string>{385.268, 1801.55}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -5261,8 +5494,8 @@ extension}</string>
 			<integer>364</integer>
 			<key>Points</key>
 			<array>
-				<string>{259.884, 1454.07}</string>
-				<string>{271.884, 1453.77}</string>
+				<string>{259.884, 1556.32}</string>
+				<string>{271.884, 1556.02}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -5394,7 +5627,7 @@ extension}</string>
 			<key>Points</key>
 			<array>
 				<string>{142.995, 1013.35}</string>
-				<string>{200.391, 1004.82}</string>
+				<string>{200.383, 1004.82}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -5666,8 +5899,9 @@ glPolygonStipple()}</string>
 
 \f0\fs26 \cf0 Restrict to viewport and\
 normalize z-buffer to 0-1:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc\pardirnatural
 
-\f1\fs22 glViewport()\
+\f1\fs22 \cf0 glViewport()\
 glDepthRange()}</string>
 						<key>VerticalPad</key>
 						<integer>2</integer>
@@ -5818,7 +6052,7 @@ glSet()}</string>
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{48.8842, 2049.25}, {207, 34}}</string>
+					<string>{{48.8842, 2151.5}, {207, 34}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -5879,7 +6113,7 @@ glLogicOp()}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{45.3842, 2032.25}, {214, 57}}</string>
+					<string>{{45.3842, 2134.5}, {214, 57}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -5913,7 +6147,7 @@ glLogicOp()}</string>
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{394.357, 1986.25}, {135.028, 19}}</string>
+					<string>{{394.357, 2088.5}, {135.028, 19}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -5975,7 +6209,7 @@ glLogicOp()}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{389.884, 1975.25}, {144.5, 36}}</string>
+					<string>{{389.884, 2077.5}, {144.5, 36}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -6009,7 +6243,7 @@ glLogicOp()}</string>
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{45.3842, 1889.59}, {214, 81.1563}}</string>
+					<string>{{45.3842, 1991.84}, {214, 81.1563}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FontInfo</key>
@@ -6061,8 +6295,9 @@ glLogicOp()}</string>
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc\pardirnatural
 
 \f0\fs26 \cf0 Blend overlapping pixels according to the blend function:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc\pardirnatural
 
-\f1\fs22 glEnable(GL_BLEND)\
+\f1\fs22 \cf0 glEnable(GL_BLEND)\
 glBlendEquation()\
 glBlendFunc()}</string>
 						<key>VerticalPad</key>
@@ -6071,7 +6306,7 @@ glBlendFunc()}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{45.3842, 1864.75}, {214, 106}}</string>
+					<string>{{45.3842, 1967}, {214, 106}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -6105,7 +6340,7 @@ glBlendFunc()}</string>
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{69.3842, 1761.96}, {190, 87.2853}}</string>
+					<string>{{69.3842, 1864.21}, {190, 87.2853}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FontInfo</key>
@@ -6157,8 +6392,9 @@ glBlendFunc()}</string>
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc\pardirnatural
 
 \f0\fs26 \cf0 Reject a pixel according to the depth test:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc\pardirnatural
 
-\f1\fs22 glEnable(GL_DEPTH_TEST)\
+\f1\fs22 \cf0 glEnable(GL_DEPTH_TEST)\
 glDepthFunc()\
 glDepthMask()}</string>
 						<key>VerticalPad</key>
@@ -6167,7 +6403,7 @@ glDepthMask()}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{69.3842, 1743.25}, {190, 103.858}}</string>
+					<string>{{69.3842, 1845.5}, {190, 103.858}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -6201,7 +6437,7 @@ glDepthMask()}</string>
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{385.768, 1665.25}, {198.232, 94}}</string>
+					<string>{{385.768, 1767.5}, {198.232, 94}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -6257,8 +6493,9 @@ glDepthMask()}</string>
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc\pardirnatural
 
 \f0\fs26 \cf0 Reject fragments according to the stencil test:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc\pardirnatural
 
-\f1\fs22 glEnable(GL_STENCIL_TEST)\
+\f1\fs22 \cf0 glEnable(GL_STENCIL_TEST)\
 glStencilFunc()\
 glStencilOp()\
 glStencilMask()}</string>
@@ -6268,7 +6505,7 @@ glStencilMask()}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{385.768, 1644.25}, {198.232, 115}}</string>
+					<string>{{385.768, 1746.5}, {198.232, 115}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -6302,7 +6539,7 @@ glStencilMask()}</string>
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{50.3842, 1432.64}, {202.737, 60.7142}}</string>
+					<string>{{50.3842, 1534.89}, {202.737, 60.7142}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FontInfo</key>
@@ -6352,8 +6589,9 @@ glStencilMask()}</string>
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc\pardirnatural
 
 \f0\fs26 \cf0 Reject fragments according to the scissor test:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc\pardirnatural
 
-\f1\fs22 glEnable(GL_SCISSOR_TEST)\
+\f1\fs22 \cf0 glEnable(GL_SCISSOR_TEST)\
 glScissorTest()}</string>
 						<key>VerticalPad</key>
 						<integer>2</integer>
@@ -6361,7 +6599,7 @@ glScissorTest()}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{45.3842, 1413}, {214, 87.4999}}</string>
+					<string>{{45.3842, 1515.25}, {214, 87.4999}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -6960,7 +7198,7 @@ glFrontFace()}</string>
 			<real>222</real>
 			<key>Points</key>
 			<array>
-				<string>{632.5, 76.8564}</string>
+				<string>{632.5, 76.8563}</string>
 				<string>{373, 76.7485}</string>
 			</array>
 			<key>Style</key>
@@ -7094,7 +7332,7 @@ glFrontFace()}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{601.5, 310.75}, {190, 1868}}</string>
+			<string>{{602, 310.779}, {190, 1969.22}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -7141,7 +7379,7 @@ glFrontFace()}</string>
 				<string>{\rtf1\ansi\ansicpg1252\cocoartf949\cocoasubrtf540
 {\fonttbl\f0\fswiss\fcharset0 Helvetica;}
 {\colortbl;\red255\green255\blue255;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
 
 \f0\fs24 \cf0 VRAM (GC)}</string>
 			</dict>
@@ -7197,7 +7435,7 @@ glFrontFace()}</string>
 				<string>{\rtf1\ansi\ansicpg1252\cocoartf949\cocoasubrtf540
 {\fonttbl\f0\fswiss\fcharset0 Helvetica;}
 {\colortbl;\red255\green255\blue255;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
 
 \f0\fs24 \cf0 RAM (Host)}</string>
 			</dict>
@@ -7220,8 +7458,8 @@ glFrontFace()}</string>
 			<real>0.0</real>
 			<key>Points</key>
 			<array>
-				<string>{322.884, 2011.75}</string>
-				<string>{322.884, 2032.37}</string>
+				<string>{322.884, 2114}</string>
+				<string>{322.884, 2134.63}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -7268,8 +7506,8 @@ glFrontFace()}</string>
 			<real>0.0</real>
 			<key>Points</key>
 			<array>
-				<string>{322.884, 1949.25}</string>
-				<string>{322.884, 1974.75}</string>
+				<string>{322.884, 2051.5}</string>
+				<string>{322.884, 2077}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -7316,8 +7554,8 @@ glFrontFace()}</string>
 			<real>0.0</real>
 			<key>Points</key>
 			<array>
-				<string>{322.884, 1876}</string>
-				<string>{322.884, 1899.25}</string>
+				<string>{322.884, 1978.25}</string>
+				<string>{322.884, 2001.5}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -7364,8 +7602,8 @@ glFrontFace()}</string>
 			<real>0.0</real>
 			<key>Points</key>
 			<array>
-				<string>{322.294, 1815.75}</string>
-				<string>{322.623, 1839}</string>
+				<string>{322.294, 1918}</string>
+				<string>{322.623, 1941.25}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -7412,8 +7650,8 @@ glFrontFace()}</string>
 			<real>0.0</real>
 			<key>Points</key>
 			<array>
-				<string>{322.202, 1730.25}</string>
-				<string>{322.047, 1757.75}</string>
+				<string>{322.201, 1832.5}</string>
+				<string>{322.047, 1860}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -7460,8 +7698,8 @@ glFrontFace()}</string>
 			<real>0.0</real>
 			<key>Points</key>
 			<array>
-				<string>{322.384, 1642.25}</string>
-				<string>{322.384, 1665.25}</string>
+				<string>{322.384, 1744.5}</string>
+				<string>{322.384, 1767.5}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -7508,8 +7746,8 @@ glFrontFace()}</string>
 			<real>0.0</real>
 			<key>Points</key>
 			<array>
-				<string>{322.884, 1471}</string>
-				<string>{322.884, 1509.12}</string>
+				<string>{322.884, 1573.25}</string>
+				<string>{322.884, 1611.37}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -7556,8 +7794,8 @@ glFrontFace()}</string>
 			<real>0.0</real>
 			<key>Points</key>
 			<array>
-				<string>{322.884, 1401.5}</string>
-				<string>{322.884, 1434}</string>
+				<string>{322.884, 1503.75}</string>
+				<string>{322.884, 1536.25}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -7604,8 +7842,8 @@ glFrontFace()}</string>
 			<real>0.0</real>
 			<key>Points</key>
 			<array>
-				<string>{322, 1187.25}</string>
-				<string>{322, 1218.75}</string>
+				<string>{322, 1289.5}</string>
+				<string>{322, 1321}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -7712,8 +7950,8 @@ and uniforms}</string>
 			<array>
 				<string>{372.994, 517.577}</string>
 				<string>{537, 542.75}</string>
-				<string>{536.5, 1143.75}</string>
-				<string>{372.997, 1162.81}</string>
+				<string>{529, 1271}</string>
+				<string>{373, 1271}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -7838,7 +8076,7 @@ and uniforms}</string>
 			<key>Head</key>
 			<dict>
 				<key>ID</key>
-				<integer>13</integer>
+				<integer>583</integer>
 			</dict>
 			<key>ID</key>
 			<integer>234</integer>
@@ -7848,8 +8086,8 @@ and uniforms}</string>
 			<real>0.0</real>
 			<key>Points</key>
 			<array>
-				<string>{322, 1076.25}</string>
-				<string>{322, 1150.25}</string>
+				<string>{322.204, 1076.25}</string>
+				<string>{322.508, 1175.25}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -8766,7 +9004,7 @@ and uniforms}</string>
 			<key>Points</key>
 			<array>
 				<string>{322, 198.364}</string>
-				<string>{321.999, 329.25}</string>
+				<string>{322, 329.25}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -9000,14 +9238,14 @@ and uniforms}</string>
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qr\pardirnatural
 
-\f0\fs24 \cf0 CPU \cf0 (Host)}</string>
+\f0\fs24 \cf0 CPU (Host)}</string>
 			</dict>
 			<key>TextPlacement</key>
 			<integer>0</integer>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{27.5, 310.75}, {563.5, 1868}}</string>
+			<string>{{27.5, 310.75}, {563.5, 1969.25}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -9056,14 +9294,14 @@ and uniforms}</string>
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qr\pardirnatural
 
-\f0\fs24 \cf0 GPU \cf0 (GC)}</string>
+\f0\fs24 \cf0 GPU (GC)}</string>
 			</dict>
 			<key>TextPlacement</key>
 			<integer>0</integer>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{27.5, 2192.75}, {563.5, 184}}</string>
+			<string>{{27.5, 2295}, {563.5, 184}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -9167,7 +9405,7 @@ and uniforms}</string>
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2011-01-19 08:49:02 +0100</string>
+	<string>2011-01-20 18:27:45 +0100</string>
 	<key>Modifier</key>
 	<string>Aurelien Vallee</string>
 	<key>NotesVisible</key>
@@ -9238,7 +9476,7 @@ and uniforms}</string>
 			</dict>
 		</array>
 		<key>Frame</key>
-		<string>{{390, 76}, {987, 1102}}</string>
+		<string>{{446, 76}, {987, 1102}}</string>
 		<key>ListView</key>
 		<true/>
 		<key>OutlineWidth</key>
@@ -9252,7 +9490,7 @@ and uniforms}</string>
 		<key>SidebarWidth</key>
 		<integer>120</integer>
 		<key>VisibleRegion</key>
-		<string>{{0, 1860}, {838, 933}}</string>
+		<string>{{0, 1983}, {838, 933}}</string>
 		<key>Zoom</key>
 		<real>1</real>
 		<key>ZoomValues</key>
