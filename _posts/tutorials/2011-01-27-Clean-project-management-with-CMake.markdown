@@ -20,15 +20,23 @@ CMake
 Building with CMake
 -------------------
 
+Handling platform-specific issues
+---------------------------------
+
+## OS-specific configuration ##
+## Compiler-specific configuration ##
+
+Managing resources
+------------------
+
 Documenting with Doxygen
 ------------------------
 
 Testing with CTest
 ------------------
 
+## Using boost.unit ##
+
 Deploying with CPack
 --------------------
-
-Appendix A: Testing with boost
-------------------------------
 
