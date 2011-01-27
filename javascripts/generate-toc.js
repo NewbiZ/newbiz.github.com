@@ -121,7 +121,7 @@ generated_toc = {
     }
 
     cur_head_lvl = "h" + generate_from;
-    cur_list_el = document.createElement('ul');
+    cur_list_el = document.createElement('ol');
     cur_list_el.style.display = display_initially;
     p = document.createElement('p');
     span = document.createElement('span');
@@ -186,7 +186,7 @@ generated_toc = {
       li = document.createElement('li');
       a = document.createElement('a');
       a.href = '#' + this_head_el.id;
-      a.appendChild(document.createTextNode(''+i+generated_toc.innerText(this_head_el)));
+      a.appendChild(document.createTextNode(generated_toc.innerText(this_head_el)));
       li.appendChild(a);
       cur_list_el.appendChild(li);
     }
