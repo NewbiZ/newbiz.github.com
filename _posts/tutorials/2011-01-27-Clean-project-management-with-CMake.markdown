@@ -150,7 +150,10 @@ CMake uses configuration files named _CMakeLists.txt_ containing variables and i
 
 ### A first attempt
 
-Create a file 
+Create a file CMakeLists.txt at the root of the project directory and add this line in it:
+{% highlight cpp %}
+ADD_EXECUTABLE( sampleproject sampleproject1.cpp sampleproject2.cpp main.cpp )
+{% endhighlight %}
 
 Handling platform-specific issues
 ---------------------------------
