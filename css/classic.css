@@ -203,7 +203,8 @@ a:hover
   padding-bottom: 5px;
 }
 
-#content ul
+#content ul,
+#content ol
 {
   font-size:   12px;
   line-height: 20px;
