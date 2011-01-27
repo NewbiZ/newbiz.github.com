@@ -200,6 +200,14 @@ a:hover
   padding-bottom: 5px;
 }
 
+#content h3
+{
+  font-size:      14px;
+  font-weight:    bold;
+  padding-bottom: 5px;
+  color:          #999999;
+}
+
 #content ul,
 #content ol
 {
