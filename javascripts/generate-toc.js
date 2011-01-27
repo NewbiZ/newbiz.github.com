@@ -143,7 +143,8 @@ generated_toc = {
     tocparent.appendChild(p);
     h = document.createElement('h2');
     h.appendChild(document.createTextNode('Table of contents'));
-    p.appendChild(h);
+    if ( headings.length>0 )
+      p.appendChild(h);
     tocparent.appendChild(cur_list_el);
     
     // now walk through our saved heading nodes
