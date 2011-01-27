@@ -186,7 +186,7 @@ generated_toc = {
       li = document.createElement('li');
       a = document.createElement('a');
       a.href = '#' + this_head_el.id;
-      a.appendChild(document.createTextNode(generated_toc.innerText(''+i+this_head_el)));
+      a.appendChild(document.createTextNode(''+i+generated_toc.innerText(this_head_el)));
       li.appendChild(a);
       cur_list_el.appendChild(li);
     }
