@@ -179,7 +179,9 @@ a:hover
 
 #content #generated-toc
 {
-  border: 1px solid #CCCCCC;
+  border:           1px solid #CCCCCC;
+  background-color: #EFEFEF;
+  padding-left:     15px;
 }
 
 #content #generated-toc .hidden
