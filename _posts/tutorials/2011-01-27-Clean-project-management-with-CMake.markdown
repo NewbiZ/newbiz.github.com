@@ -140,7 +140,7 @@ Building with CMake
 It is now time to look at how to build this project.
 CMake uses configuration files named _CMakeLists.txt_ containing variables and instructions to build an application.
 
-### A first attempt
+### First steps
 
 Create a file CMakeLists.txt at the root of the project directory and add this line in it:
 {% highlight cmake %}
@@ -210,9 +210,9 @@ SampleProject2::~SampleProject2()
 SampleProject1::~SampleProject1()
 </pre>
 
-Now since I have XCode installed, I could have asked for an XCode project using the following syntax:
+Now since I have XCode installed, I could have asked for an XCode project using the _-G_ argument:
 <pre class="console">
-<span class="prompt">/SampleProject-build$</span> cmake .. -G Xcode
+<span class="prompt">/SampleProject-build$</span> cmake ../SampleProject -G Xcode
 -- The C compiler identification is GNU
 -- The CXX compiler identification is GNU
 -- Checking whether C compiler has -isysroot
@@ -246,6 +246,98 @@ SampleProject1::function()
 SampleProject2::function()
 SampleProject2::~SampleProject2()
 SampleProject1::~SampleProject1()
+</pre>
+
+Okay, so we are now able to build multiple C++ files using CMake, but the project layout is far from optimal. We are now going to improve, step by step, our _CMakeLists.txt_ file to support more and more features.
+
+### CMake version number
+
+It is always a good practice to explicitly provide the CMake version in use. You can do so by simply adding the following line at the beginning of the _CMakeLists.txt_:
+{% highlight cmake %}
+CMAKE_MINIMUM_REQUIRED( VERSION 2.8 )
+
+ADD_EXECUTABLE( sampleproject sampleproject1.cpp sampleproject2.cpp main.cpp )
+{% endhighlight %}
+
+If you did not provided a minimum CMake version, you may very well receive the following warning message:
+<pre class="console">
+CMake Warning (dev) in CMakeLists.txt:
+  No cmake_minimum_required command is present.  A line of code such as
+
+    cmake_minimum_required(VERSION 2.8)
+
+  should be added at the top of the file.  The version specified may be lower
+  if you wish to support older CMake versions for this project.  For more
+  information run "cmake --help-policy CMP0000".
+This warning is for project developers.  Use -Wno-dev to suppress it.
+</pre>
+
+### Organizing files
+
+Currently the major problem of our project is that there is no file hierarchy. We need to create a tree-like structure to keep our files well organized. In the present article, we chose the following structure:
+
+* SampleProject
+  * src
+    * sampleproject1.cpp
+    * sampleproject2.cpp
+    * main.cpp
+  * inc
+    * sampleproject
+      * sampleproject1.h
+      * sampleproject2.h
+  * CMakeLists.txt
+
+Having an extra layer of indirection for headers (the _inc/sampleproject_ directory) will force us to use `#include "sampleproject/xxx.h"`. This is a convenient way to access header files if we need to install our header directory later (in case we are creating a library instead of an application).
+
+Our CMakeLists.txt becomes:
+{% highlight cmake %}
+CMAKE_MINIMUM_REQUIRED( VERSION 2.8 )
+
+INCLUDE_DIRECTORIES( inc )
+ADD_EXECUTABLE( sampleproject src/sampleproject1.cpp src/sampleproject2.cpp src/main.cpp )
+{% endhighlight %}
+
+As you should have noticed, the command `INCLUDE_DIRECTORIES` adds a directory to the include path.
+
+The layout of our project is now clean, but our _CMakeLists.txt_ still isn't all that cool. As in a real program, let's move everything inside variables. This is very easy using CMake, you just have to use the `SET( name value )` command. Accessing a variable is done using the `${name}` syntax.
+We end up with:
+{% highlight cmake %}
+CMAKE_MINIMUM_REQUIRED( VERSION 2.8 )
+
+SET( PROJ_NAME      "sampleproject" )
+SET( PROJ_SOURCES   "src/sampleproject1.cpp" "src/sampleproject2.cpp" "src/main.cpp" )
+SET( PROJ_INCLUDES  "inc" )
+
+INCLUDE_DIRECTORIES( ${PROJ_INCLUDES} )
+ADD_EXECUTABLE( ${PROJ_NAME} ${PROJ_SOURCES} )
+{% endhighlight %}
+
+Note that CMake defines a wall set of predefined variables ready for use to use. They all start with the `CMAKE_` prefix. We will use this fact to define some more custom variables that we will end up using later.
+{% highlight cmake %}
+CMAKE_MINIMUM_REQUIRED( VERSION 2.8 )
+
+SET( PROJ_NAME      "sampleproject" )
+SET( PROJ_PATH      ${CMAKE_SOURCE_DIR} )
+SET( PROJ_OUT_PATH  ${CMAKE_BINARY_DIR} )
+SET( PROJ_SOURCES   "src/sampleproject1.cpp" "src/sampleproject2.cpp" "src/main.cpp" )
+SET( PROJ_HEADERS   "inc/sampleproject/sampleproject1.h" "inc/sampleproject/sampleproject2.h" )
+SET( PROJ_LIBRARIES "" )
+SET( PROJ_INCLUDES  "inc" )
+
+INCLUDE_DIRECTORIES( ${PROJ_INCLUDES} )
+ADD_EXECUTABLE( ${PROJ_NAME} ${PROJ_SOURCES} )
+TARGET_LINK_LIBRARIES( ${PROJ_NAME} ${PROJ_LIBRARIES} )
+{% endhighlight %}
+`CMAKE_SOURCE_DIR` refers to the root source directory containing the CMakeLists.txt file (./SampleProject here) and `CMAKE_BINARY_DIR` points to the current build directory (./SampleProject-build for us).
+
+Notice that we also added the `TARGET_LINK_LIBRARIES( target libraries)` command that allows us to link with shared libraries. We could for instance use `SET( PROJ_LIBRARIES "-gl" )`:
+<pre class="console">
+<span class="prompt">/SampleProject1-build$</span> ldd sampleproject 
+sampleproject:
+	/opt/local/lib/libGL.1.dylib (compatibility version 1.2.0, current version 1.2.0)
+	/usr/lib/libstdc++.6.dylib (compatibility version 7.0.0, current version 7.4.0)
+	/usr/lib/libgcc_s.1.dylib (compatibility version 1.0.0, current version 1.0.0)
+	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 111.1.5)
 </pre>
 
 Handling platform-specific issues
