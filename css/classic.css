@@ -177,6 +177,11 @@ a:hover
   line-height: 1.8;
 }
 
+#content #generated-toc
+{
+  border: 1px solid #CCCCCC;
+}
+
 #content #generated-toc .hidden
 {
   display: none;
