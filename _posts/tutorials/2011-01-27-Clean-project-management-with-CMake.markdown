@@ -210,6 +210,44 @@ SampleProject2::~SampleProject2()
 SampleProject1::~SampleProject1()
 </pre>
 
+Now since I have XCode installed, I could have asked for an XCode project using the following syntax:
+<pre class="console">
+<span class="prompt">/SampleProject-build$</span> cmake .. -G Xcode
+-- The C compiler identification is GNU
+-- The CXX compiler identification is GNU
+-- Checking whether C compiler has -isysroot
+-- Checking whether C compiler has -isysroot - yes
+-- Checking whether C compiler supports OSX deployment target flag
+-- Checking whether C compiler supports OSX deployment target flag - yes
+-- Check for working C compiler using: Xcode
+-- Check for working C compiler using: Xcode -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Checking whether CXX compiler has -isysroot
+-- Checking whether CXX compiler has -isysroot - yes
+-- Checking whether CXX compiler supports OSX deployment target flag
+-- Checking whether CXX compiler supports OSX deployment target flag - yes
+-- Check for working CXX compiler using: Xcode
+-- Check for working CXX compiler using: Xcode -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /path/to/SampleProject1-build
+<span class="prompt">/SampleProject-build$</span> xcodebuild
+=== BUILDING NATIVE TARGET sampleproject OF PROJECT Project WITH THE DEFAULT CONFIGURATION (Debug) ===
+...
+Build all projects
+** BUILD SUCCEEDED **
+<span class="prompt">/SampleProject-build$</span> ./Debug/sampleproject
+SampleProject1::SampleProject1()
+SampleProject2::SampleProject2()
+SampleProject1::function()
+SampleProject2::function()
+SampleProject2::~SampleProject2()
+SampleProject1::~SampleProject1()
+</pre>
+
 Handling platform-specific issues
 ---------------------------------
 
