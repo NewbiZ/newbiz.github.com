@@ -177,6 +177,11 @@ a:hover
   line-height: 1.8;
 }
 
+#content #generated-toc .hidden
+{
+  display: none;
+}
+
 #content h1
 {
   font-size:      18px;
