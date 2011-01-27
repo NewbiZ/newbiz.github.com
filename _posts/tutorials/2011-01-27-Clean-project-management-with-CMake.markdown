@@ -324,11 +324,15 @@ SET( PROJ_HEADERS   "inc/sampleproject/sampleproject1.h" "inc/sampleproject/samp
 SET( PROJ_LIBRARIES "" )
 SET( PROJ_INCLUDES  "inc" )
 
+PROJECT( ${PROJ_NAME} )
+
 INCLUDE_DIRECTORIES( ${PROJ_INCLUDES} )
 ADD_EXECUTABLE( ${PROJ_NAME} ${PROJ_SOURCES} )
 TARGET_LINK_LIBRARIES( ${PROJ_NAME} ${PROJ_LIBRARIES} )
 {% endhighlight %}
 `CMAKE_SOURCE_DIR` refers to the root source directory containing the CMakeLists.txt file (./SampleProject here) and `CMAKE_BINARY_DIR` points to the current build directory (./SampleProject-build for us).
+
+The `PROJECT( name )` command was also used here. This is not mandatory here, but will create a _target_ for our application executable. You can create as many _target projects_ that you want, to build multiple libraries at the same time for instance.
 
 Notice that we also added the `TARGET_LINK_LIBRARIES( target libraries)` command that allows us to link with shared libraries. We could for instance use `SET( PROJ_LIBRARIES "-gl" )`:
 <pre class="console">
@@ -339,6 +343,13 @@ sampleproject:
 	/usr/lib/libgcc_s.1.dylib (compatibility version 1.0.0, current version 1.0.0)
 	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 111.1.5)
 </pre>
+
+One annoying problem still remains: we have to manually add source files in the _CMakeLists.txt_. This could be automated if we were able to automatically fill the `PROJ_SOURCES` with the sources available in the _src/_ folder. This is exactly what the following line will do for us:
+{% highlight cmake %}
+FILE( GLOB_RECURSE PROJ_SOURCES src/*.cpp )
+FILE( GLOB_RECURSE PROJ_HEADERS inc/${PROJ_NAME}/*.h )
+{% endhighlight %}
+All _*.cpp_ files under the _src/_ folder will recursively be added to the `PROJ_SOURCES` variable. Same will happen for `PROJ_HEADERS`.
 
 Handling platform-specific issues
 ---------------------------------
