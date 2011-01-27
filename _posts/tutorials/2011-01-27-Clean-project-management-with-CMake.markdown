@@ -135,11 +135,11 @@ Nothing fancy here, we have five files: _sampleproject1.h_, _sampleproject1.cpp_
 Our project directory should look like the following:
 
 * SampleProject
-* * sampleproject1.h
-* * sampleproject1.cpp
-* * sampleproject2.h
-* * sampleproject2.cpp
-* * main.cpp
+ * sampleproject1.h
+ * sampleproject1.cpp
+ * sampleproject2.h
+ * sampleproject2.cpp
+ * main.cpp
 
 
 Building with CMake
