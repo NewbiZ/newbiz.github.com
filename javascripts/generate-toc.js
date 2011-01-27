@@ -137,10 +137,13 @@ generated_toc = {
     a = document.createElement('a');
     a.id = 'generated_toc_d_toggle';
     a.appendChild(document.createTextNode(toggle_initially));
-    p.appendChild(a);
+    //p.appendChild(a);
     a.onclick = generated_toc.wrapOpenClose(a,cur_list_el);
     a.href = '#';
     tocparent.appendChild(p);
+    h = document.createElement('h2');
+    h.appendChild(document.createTextNode('Table of contents'));
+    p.appendChild(h);
     tocparent.appendChild(cur_list_el);
     
     // now walk through our saved heading nodes
