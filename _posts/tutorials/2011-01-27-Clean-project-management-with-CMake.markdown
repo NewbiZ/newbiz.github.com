@@ -134,7 +134,6 @@ Our project directory should look like the following:
   * sampleproject2.cpp
   * main.cpp
 
-
 Building with CMake
 -------------------
 
@@ -159,13 +158,14 @@ So here we go, let's create a SampleProject-build directory and call CMake from 
   * sampleproject2.h
   * sampleproject2.cpp
   * main.cpp
+  * CMakeLists.txt
 * SampleProject-build
   * _call CMake from here_
 
 <pre class="console">
-/$ mkdir SampleProject-build
-/$ cd SampleProject-build
-/SampleProject-build$ cmake ../SampleProject
+<span class="prompt">/$</span> mkdir SampleProject-build
+<span class="prompt">/$</span> cd SampleProject-build
+<span class="prompt">/SampleProject-build$</span> cmake ../SampleProject
 -- The C compiler identification is GNU
 -- The CXX compiler identification is GNU
 -- Checking whether C compiler has -isysroot
@@ -194,14 +194,14 @@ Here we called CMake without asking for a specific _generator_, so it defaulted 
 It is now possible to build the application normally since CMake generated _makefile_.
 
 <pre class="console">
-/SampleProject-build$ make
+<span class="prompt">/SampleProject-build$</span> make
 Scanning dependencies of target sampleproject
 [ 33%] Building CXX object CMakeFiles/sampleproject.dir/sampleproject1.cpp.o
 [ 66%] Building CXX object CMakeFiles/sampleproject.dir/sampleproject2.cpp.o
 [100%] Building CXX object CMakeFiles/sampleproject.dir/main.cpp.o
 Linking CXX executable sampleproject
 [100%] Built target sampleproject
-/SampleProject-build$ ./sampleproject
+<span class="prompt">/SampleProject-build$</span> ./sampleproject
 SampleProject1::SampleProject1()
 SampleProject2::SampleProject2()
 SampleProject1::function()
