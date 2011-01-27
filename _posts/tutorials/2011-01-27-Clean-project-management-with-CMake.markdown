@@ -27,8 +27,8 @@ CMake
 
 The most important thing to note is that CMake is IDE agnostic. You don't have to force your co-workers to use a specific IDE or compiler, CMake will generate a project file for any compiler, any IDE, and on any platform that one may think of.
 
-Building with CMake
--------------------
+Application overview
+--------------------
 
 First, let's define our awesome application. It is basically composed of two classes: SimpleProject1 and SimpleProject2.
 
@@ -130,11 +130,33 @@ int main( int, char** )
 }
 {% endhighlight %}
 
+Nothing fancy here, we have five files: _sampleproject1.h_, _sampleproject1.cpp_, _sampleproject2.h_, _sampleproject2.cpp_, and main.cpp.
+
+Our project directory should look like the following:
+
+* SampleProject
+* * sampleproject1.h
+* * sampleproject1.cpp
+* * sampleproject2.h
+* * sampleproject2.cpp
+* * main.cpp
+
+
+Building with CMake
+-------------------
+
+It is now time to look at how to build this project.
+CMake uses configuration files named _CMakeLists.txt_ containing variables and instructions to build an application.
+
+### A first attempt
+
+Create a file 
+
 Handling platform-specific issues
 ---------------------------------
 
-### OS-specific configuration ###
-### Compiler-specific configuration ###
+### OS-specific configuration
+### Compiler-specific configuration
 
 Managing resources
 ------------------
@@ -145,7 +167,7 @@ Documenting with Doxygen
 Testing with CTest
 ------------------
 
-### Using boost.unit ###
+### Using boost.unit
 
 Deploying with CPack
 --------------------
