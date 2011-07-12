@@ -1,6 +1,6 @@
 ---
 layout: page_post
-title: Playing with cpuid
+title: Clean enumerations using xmacros
 categories: cpp
 ---
 Introduction
