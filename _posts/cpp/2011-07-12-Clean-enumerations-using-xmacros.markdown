@@ -5,7 +5,9 @@ categories: cpp
 ---
 Introduction
 ------------
-In this short article, we will discuss a classical C++ engineering problem: storing meta data alongside enumeration values (such as their string equivalent). The solution we will end up with is will be based on so called "xmacros", a not so well known C-inherited trick.
+In this short article, we will discuss a classical C++ engineering problem: storing meta data alongside enumeration
+values (such as their string equivalent). The solution we will end up with is based on so called "xmacros", a not so
+well known C-inherited trick.
 
 The problem
 -----------
@@ -85,7 +87,7 @@ enum Color
 };
 {% endhighlight %}
 
-Going one step further, we could extract the `X(...)̀  declarations in a clean macro list outside the enumerations scope.
+Going one step further, we could extract the `X(...)̀  declarations in a clean macro list, outside the enumerations scope.
 
 {% highlight cpp %}
 #define COLOR_LIST \
@@ -233,6 +235,8 @@ std::size_t colorCount();
 // --- color.cpp
 #include "color.h"
 
+#include <cassert>
+
 #define NARG(...)  NARG_(__VA_ARGS__,RSEQ_N())
 #define NARG_(...) ARG_N(__VA_ARGS__)
 #define ARG_N(                             \
@@ -262,7 +266,8 @@ static const std::string colorNames[] =
 
 std::string colorName( Color c )
 {
-  return colorNames[c];
+  assert( c<colorCount() );
+  return colorNames[c%colorCount()];
 }
 
 bool colorValid( unsigned int c )
