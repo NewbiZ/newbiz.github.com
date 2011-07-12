@@ -308,3 +308,87 @@ int main( int argc, char** argv )
 }
 {% endhighlight %}
 
+Boost.PreProcessor
+------------------
+An other possibility would be to use Boost.PreProcessor (http://www.boost.org/doc/libs/release/libs/preprocessor/doc/index.html).
+An advantage of this alternative is that you have a full featured macro framework to manipulate your enumerations. Here is a quick sample
+of what you may end up with:
+
+{% highlight cpp %}
+// --- color.h
+#include <string>
+
+#include <boost/preprocessor/seq/enum.hpp>
+
+#define COLOR_LIST \
+  (RED   )         \
+  (GREEN )         \
+  (BLUE  )         \
+  (PURPLE)         \
+  (YELLOW)         \
+  (ORANGE)
+
+enum Color
+{
+BOOST_PP_SEQ_ENUM(COLOR_LIST)
+};
+
+std::string colorName ( Color        c );
+bool        colorValid( unsigned int c );
+std::size_t colorCount();
+
+// --- color.cpp
+#include <cassert>
+
+#include <boost/preprocessor/seq/elem.hpp>
+#include <boost/preprocessor/seq/size.hpp>
+#include <boost/preprocessor/seq/transform.hpp>
+#include <boost/preprocessor/stringize.hpp>
+
+static const std::string colorNames[] =
+{
+#define OP(s,data,element) BOOST_PP_STRINGIZE(element)
+BOOST_PP_SEQ_ENUM(BOOST_PP_SEQ_TRANSFORM(OP, 0, COLOR_LIST))
+#undef OP
+};
+
+std::string colorName( Color c )
+{
+  assert( colorValid(c) );
+  return colorNames[c%colorCount()];
+}
+
+bool colorValid( unsigned int c )
+{
+  return c<colorCount();
+}
+
+std::size_t colorCount()
+{
+  return BOOST_PP_SEQ_SIZE(COLOR_LIST);
+}
+
+// --- main.cpp
+#include <iostream>
+#include <cstdlib>
+
+int main( int argc, char** argv )
+{
+  std::cout << "Red   code is " << RED   << std::endl;
+  std::cout << "Green code is " << GREEN << std::endl;
+  std::cout << "Blue  code is " << BLUE  << std::endl;
+  std::cout << std::endl;
+  std::cout << "Red   name is " << colorName(RED  ) << std::endl;
+  std::cout << "Green name is " << colorName(GREEN) << std::endl;
+  std::cout << "Blue  name is " << colorName(BLUE ) << std::endl;
+  std::cout << std::endl;
+  std::cout << "Code 0 is valid? " << colorValid(0) << std::endl;
+  std::cout << "Code 5 is valid? " << colorValid(5) << std::endl;
+  std::cout << "Code 6 is valid? " << colorValid(6) << std::endl;
+  std::cout << std::endl;
+  std::cout << "Total color count: " << colorCount() << std::endl;
+
+  return EXIT_SUCCESS;
+}
+{% endhighlight %}
+
